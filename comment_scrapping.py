@@ -1,167 +1,124 @@
 import time
 import re
 import json
+import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 
 
-def google_maps_full_scraper(place_name):
+def google_maps_branch_scraper(place_name, lat, lon):
     chrome_options = Options()
     chrome_options.binary_location = (
         r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
     )
     chrome_options.add_argument("--lang=tr")
     chrome_options.add_argument("--start-maximized")
-    chrome_options.add_experimental_option("detach", True)
+    chrome_options.add_argument("--disable-gpu")
 
-    lat, lon, full_address = "Bulunamadı", "Bulunamadı", "Adres bulunamadı"
+    driver = webdriver.Chrome(options=chrome_options)
+    wait = WebDriverWait(driver, 10)
     all_reviews = []
 
     try:
-        driver = webdriver.Chrome(options=chrome_options)
-        wait = WebDriverWait(driver, 15)
+        # KRİTİK DEĞİŞİKLİK: Doğrudan koordinat odaklı arama URL'si
+        # Bu URL Google'ı o koordinatın tam üstüne bırakır
+        search_url = f"https://www.google.com/maps/search/{place_name}/@{lat},{lon},17z"
+        driver.get(search_url)
+        print(f"--- {place_name} ({lat}, {lon}) İşleniyor ---")
+        time.sleep(6)
 
-        # 1. ARAMA VE SAYFAYI AÇMA
-        search_query = f"{place_name} Ankara"
-        url = f"https://www.google.com/maps/search/{search_query.replace(' ', '+')}"
-        driver.get(url)
-        print(f"--- {place_name} İşleniyor ---")
-        time.sleep(5)
-
-        # 2. KOORDİNATLARI VE ADRESİ ÇEKME
+        # 1. MEKANI SEÇME (Koordinata en yakın olanı bulma)
         try:
-            current_url = driver.current_url
-            coords = re.search(r"@([-?\d\.]+),([-?\d\.]+)", current_url)
-            if coords:
-                lat, lon = coords.group(1), coords.group(2)
-
-            address_element = driver.find_element(
-                By.XPATH, '//button[contains(@aria-label, "Adres:")]'
-            )
-            full_address = address_element.get_attribute("aria-label").replace(
-                "Adres: ", ""
-            )
+            # Sol listedeki ilk organik sonuca tıkla (Çünkü koordinat verdiğimiz için ilk sonuç o şubedir)
+            results = driver.find_elements(By.CLASS_NAME, "hfpxzc")
+            if results:
+                driver.execute_script("arguments[0].click();", results[0])
+                time.sleep(4)
+            else:
+                print("Sonuç bulunamadı, muhtemelen doğrudan detay sayfası açıldı.")
         except:
-            print(
-                "Koordinat veya adres o an alınamadı (Detay sayfasında tekrar denenecek)."
-            )
+            pass
 
-        # 3. YORUMLAR SEKMESİNE GEÇİŞ (KRİTİK BÖLÜM)
-        # 3. YORUMLAR SEKMESİNE GEÇİŞ (REKLAM ENGELLEYİCİ MANTIK)
-        print("Yorumlar sekmesi aranıyor...")
+        # 2. ADRES DOĞRULAMA (İsteğe bağlı)
         try:
-            # Önce sayfa zaten detay modunda mı bak (Doğrudan açılmış olabilir)
+            address_btn = wait.until(
+                EC.presence_of_element_located(
+                    (By.XPATH, '//button[contains(@aria-label, "Adres:")]')
+                )
+            )
+            current_address = address_btn.get_attribute("aria-label")
+            print(f"Doğrulanan Adres: {current_address}")
+        except:
+            pass
+
+        # 3. YORUMLARA GİT VE SCROLL (Senin çalışan scroll mantığın)
+        try:
             reviews_btn = wait.until(
                 EC.element_to_be_clickable(
-                    (
-                        By.XPATH,
-                        '//button[contains(@aria-label, "Yorumlar")] | //div[@role="tab" and contains(., "Yorumlar")]',
-                    )
+                    (By.XPATH, '//button[contains(@aria-label, "Yorumlar")]')
                 )
             )
             reviews_btn.click()
-            print("Doğrudan sekmeye tıklandı.")
-        except:
-            print(
-                "Özet ekran/Arama sonuçları saptandı. Sponsorlu olmayan sonuç aranıyor..."
-            )
-            try:
-                # Tüm sonuçları (hfpxzc class'lı elementleri) listele
-                results = driver.find_elements(By.CLASS_NAME, "hfpxzc")
+            time.sleep(3)
 
-                target_node = None
-                for res in results:
-                    # Bu sonucun üstünde veya yakınında "Sponsorlu" yazıyor mu kontrol et
-                    # Genellikle 'Sponsorlu' yazısı bir üst div içinde olur
-                    parent_text = res.find_element(By.XPATH, "./../../..").text
-
-                    if "Sponsorlu" in parent_text or "Reklam" in parent_text:
-                        print("Sponsorlu içerik atlandı...")
-                        continue
-                    else:
-                        # İlk sponsorlu olmayan sonucu bulduk!
-                        target_node = res
-                        break
-
-                if target_node:
-                    driver.execute_script("arguments[0].click();", target_node)
-                    print(f"Organik sonuca tıklandı.")
-                    time.sleep(5)
-
-                    # Şimdi yorumlar sekmesine tıkla
-                    reviews_btn = wait.until(
-                        EC.element_to_be_clickable(
-                            (By.XPATH, '//button[contains(@aria-label, "Yorumlar")]')
-                        )
-                    )
-                    reviews_btn.click()
-                else:
-                    print("Uygun bir sonuç bulunamadı.")
-            except Exception as e:
-                print(f"Mekana ulaşılamadı. Hata: {e}")
-
-        # 4. KAYDIRMA VE YÜKLEME
-        try:
             scrollable_div = wait.until(
                 EC.presence_of_element_located(
-                    (
-                        By.XPATH,
-                        '//div[contains(@class, "m67B6")] | //div[@role="main" and @tabindex="-1"]',
-                    )
+                    (By.XPATH, '//div[@role="main" and @tabindex="-1"]')
                 )
             )
-            print("Yorumlar aşağı kaydırılıyor...")
 
-            for i in range(20):
+            for _ in range(15):  # Her şube için 30-40 yorum yeterli dersen
                 driver.execute_script(
                     "arguments[0].scrollTop = arguments[0].scrollHeight", scrollable_div
                 )
                 time.sleep(2)
-
-                # "Diğer" (Daha fazla) butonlarını aç
-                more_btns = driver.find_elements(
-                    By.XPATH,
-                    '//button[contains(., "Diğer") or contains(@aria-label, "Daha fazla")]',
-                )
-                for b in more_btns:
-                    try:
-                        driver.execute_script("arguments[0].click();", b)
-                    except:
-                        pass
-
-                current_count = len(driver.find_elements(By.CLASS_NAME, "MyEned"))
-                print(f"Yüklenen yorum: {current_count}")
-                if current_count >= 60:
-                    break
         except:
-            print("Kaydırma alanı bulunamadı.")
+            print("Yorum alanı bulunamadı.")
 
-        # 5. VERİLERİ TOPLA
-        review_elements = driver.find_elements(By.CLASS_NAME, "MyEned")
-        for el in review_elements:
-            text = el.text.strip()
+        # 4. VERİ TOPLAMA
+        review_spans = driver.find_elements(By.CLASS_NAME, "wiI7pd")
+        for span in review_spans:
+            text = span.text.strip()
             if text and text not in all_reviews:
                 all_reviews.append(text)
-            if len(all_reviews) >= 60:
-                break
 
     except Exception as e:
-        print(f"Genel Hata: {e}")
+        print(f"Hata oluştu: {e}")
     finally:
-        return {
-            "isim": place_name,
-            "enlem": lat,
-            "boylam": lon,
-            "adres": full_address,
-            "yorumlar": all_reviews,
-        }
+        driver.quit()
+        return all_reviews
 
 
-# --- ÇALIŞTIRMA ---
-sonuc = google_maps_full_scraper("Timboo Kafe")
-with open("mekan_verisi.json", "w", encoding="utf-8") as f:
-    json.dump(sonuc, f, ensure_ascii=False, indent=4)
-print(f"\nİşlem Tamamlandı! {len(sonuc['yorumlar'])} yorum kaydedildi.")
+# --- TOPLU İŞLEME DÖNGÜSÜ ---
+def hepsini_topla():
+    df = pd.read_csv("ankara_kafeler.csv")  # OSM'den gelen koordinatlı liste
+    toplu_sonuc = []
+
+    # Şubeleri teker teker gez
+    for index, row in df.iterrows():
+        print(f"\n[{index+1}/{len(df)}] {row['isim']} taranıyor...")
+        yorumlar = google_maps_branch_scraper(row["isim"], row["lat"], row["lon"])
+
+        toplu_sonuc.append(
+            {
+                "isim": row["isim"],
+                "osm_lat": row["lat"],
+                "osm_lon": row["lon"],
+                "yorumlar": yorumlar,
+            }
+        )
+
+        # Her 5 şubede bir yedek al (Botun çökme ihtimaline karşı)
+        if (index + 1) % 5 == 0:
+            with open("toplu_mekan_verisi_yedek.json", "w", encoding="utf-8") as f:
+                json.dump(toplu_sonuc, f, ensure_ascii=False, indent=4)
+
+    with open("final_mekan_verisi.json", "w", encoding="utf-8") as f:
+        json.dump(toplu_sonuc, f, ensure_ascii=False, indent=4)
+
+
+hepsini_topla()  # Başlatmak için bunu kullanın

@@ -1,0 +1,768 @@
+[
+    {
+        "isim": "Mado",
+        "osm_lat": 39.9027817,
+        "osm_lon": 32.860248,
+        "yorumlar": []
+    },
+    {
+        "isim": "C'ViZ",
+        "osm_lat": 39.8915594,
+        "osm_lon": 32.8711121,
+        "yorumlar": []
+    },
+    {
+        "isim": "Cafe des Cafes",
+        "osm_lat": 39.9066216,
+        "osm_lon": 32.8612044,
+        "yorumlar": []
+    },
+    {
+        "isim": "Mado",
+        "osm_lat": 39.8964973,
+        "osm_lon": 32.7045638,
+        "yorumlar": []
+    },
+    {
+        "isim": "Lal Cafe",
+        "osm_lat": 39.8978381,
+        "osm_lon": 32.7057047,
+        "yorumlar": []
+    },
+    {
+        "isim": "Liva",
+        "osm_lat": 39.8968768,
+        "osm_lon": 32.7048764,
+        "yorumlar": [
+            "All day kahvaltı da kruvasan seçimimden memnunum kahvaltıdaki pancake hariç o çok kötüydü kahvaltı onun dışında güzeldi maya simple güzel bir tatlı ama tek kişi bitirmek çok zor iki kişilik all day kahvaltı 1450 tatlılarda 400-500 lira arasında değişiyor",
+            "2 kişilik all day breakfast aldık. Kruvasan içeriği güzel ama kruvasanın kendisi pek başarılı değildi, tat genel olarak iyiydi. (Pesto-cheese ve egg-beef söyledik) Gronala yoğurt tabağını beğendik. Pankek içi pişmemiş geldi, beğenmedik. …",
+            "Mekan genel olarak güzel, ortamı hoş ve menü gerçekten lezzetli. Sunulan yemeklerden memnun kaldık, servis de başlangıçta fena değildi. Ancak yaşadığımız bazı olumsuzluklar sebebiyle bu memnuniyet maalesef tamamen gölgelendi. …",
+            "1 ay önce ablamla gitmiştim içerisi gayet iyi çalışan arkadaşlarımız ilgiliydi 2 kahve 1 tatlı yedik ikisi bir arada çok tatlı geldi birdaha gitsem tatlının yanında çay içerim. Fiyatlarda gayet uygun",
+            "Harika kahve, kaliteli çikolata. 2 kişi burayı ziyaret ettik içecek olarak siyah çay ve cortado içtik. Cortado tam olması gerektiği gibi, doğru oranda ve kaliteli bir çekirdekle hazırlanmıştı. (Zaten bu işletmeyi kahve festivalinde …",
+            "Mekan tasarımı çok hoş fakat mekan çok küçük. Yan masalarla iç içe oturuuorsunuz biraz. Eşimle kahvaltı için gitmiştik kruvasan sipariş ettik, kruvasanın iç malzemeleri gayet güzeldi ama kruvasan pek başarılı değildi. Eşim beğenmedi ve doymadı 🤭 …",
+            "Mekanın içi çok güzel. Kahvaltı olarak kruvasanlarından Pesto & Cheese, yanına portakal suyu içtim. Çok başarılı ve lezzetliydi. Servis de hızlıydı.",
+            "Atmosferiyle insanın içini ısıtan, tatlıları özenle hazırlanmış çok güzel bir kafe. Çalışanlar güler yüzlü ve ilgiliydi.  Emeği geçen herkese teşekkür ederiz.Kesinlikle tavsiye ederiz",
+            "Mekanın atmosferi çok güzel dışarı kısımda yer yoktu ama içersi daha serindi böyle tatlı bi şeftali kokusu vardı içeride. Menü bol çeşitli, fiyatlar 250 300 arası içecekler. Peach garden olan buzdu tamamen bide simple ice tea denedik o çok …",
+            "Merhabalar efendim, öncelikle bu tatlı ziyaretiniz için çok teşekkür ederiz. Yorumlarınızla hizmet kalitemizi en yüksek seviyelere getirmek için çalışmaya devam ediyoruz. Sizleri tekrardan mağazalarımızda görmekten mutluluk duyarız.",
+            "Saraçoğlu Mahallesinin içinde bulunan bir mekân. Tatlılarının güzel olduğu önerisiyle geldik. Biz ortaya 3 ayrı tatlı istedik hepsini de çok beğendik. Mekân da güzeldi. Biz açık alanda oturmayı tercih ettik ama içerisi de çok şık …"
+        ]
+    },
+    {
+        "isim": "Kafe's",
+        "osm_lat": 39.9091774,
+        "osm_lon": 32.7896872,
+        "yorumlar": [
+            "Fırın ürünleri için ve de labneli poğaça nasıl bir şeymiş tadınlamak için geldim. Poğaçaları güzeldi Ankara simidi de pek ala iyiydi ama fiyatlar gerçekten uçmuş. Labneli poğaça 75 lira, dereotlu poğaça 40 lira. Çay dediğimiz şey 75 lira. Kafenin ortamı güzel. Yazın bahçede oturup bir şeyler yeme içme insana iyi hissettirebilir.",
+            "Tost çeşitleri, poşe yumurta çeşitleri, çayı ve havuç suyunu denedik. Hepsi lezzetliydi.\nDışarıda oturmak istendiğinde sigarasız alan çok az ve dolu oluyor. Keşke açık alanda daha fazla sigarasız alan olsa.",
+            "Mekan büyük, açık alanı mevcut. Kahvaltılık olarak avakadolu poşe yumurta, 3 peynirli bazlama tost ve omlet söyledik. Lezzetleri güzeldi, fiyatlar iyiydi.",
+            "Çok geniş bir menü seçeneği sunan ürünleri taze ve lezzetli olan mekan. Kahvaltı etmek için uğramıştım denediğim ürünlerin hepsi beni memnun etti lezzetleri oldukça iyiydi. Ayrıca çalışanlar da gayet kibar ve ilgililerdi.",
+            "Söğütözü OPET yanında hatta içi içe diyebilirim. Unlu mamülleri tercih sebebi. Her zaman taze bulabiliyorsunuz.  Self servis bir işletme. Beyaz yakalıların ve satış elemanlarının buluşma ve dinlenme yeri. Çay ve kahveleri her zaman taze …",
+            "Eskişehir yolu üzerinde güzel bir mekan, öğlen saatleri genelde kalabalık. Dubai pasta ve cappuccino denedim, cappuccino fena değildi ama Dubai pastayı pek sevemedim. Fiyatlar da konumuna ve manzarasız olmasına göre biraz yüksek…",
+            "Yıllardır geldiğim bu mekânda son dönemdeki müşteri yaklaşımı kabul edilemez noktaya geldi. Self servis hizmet verilen ve Laptopla çalışılanların bu yüzden tercih ettiği bir mekan olmasına rağmen, rezervasyonlu restoran fiyatı …",
+            "Kredi ve yurtlar binası yapılmadan önce eski binası oradaydı ta o zamandan beri 20 senedir müşterisiyim. Her geçen sene olumsuza gidişini üzülerek görüyorum. Lezzet,hizmet hepsi bir miktar tolere edilebilirdi ancak artık hijyen konusunda …",
+            "Pastayı kanıt olsun diye koyuyorum. Dün aldık; eve geldik, doğum günü kutlaması yapacağız, herkesin bir çatal alması ile çıkarması bir oldu maalesef. Pastanın günlük olmasını geçin muhtemelen bir haftalık bir pasta; içindeki muzlar …",
+            "Bir önceki yorumumu işletme kaldırmış. O yüzden tekrar yazıyorum yine silinse yine yazacagım.  Kaç günlük olduğu tam tahmin edilememek ile birlikte aşırı vasat bir browni aldık bugün ve ofiste dokuz kişiye ikram ederek bitirmeye çalıştım …"
+        ]
+    },
+    {
+        "isim": "Bolulu Hasan Usta",
+        "osm_lat": 39.9066378,
+        "osm_lon": 32.8609512,
+        "yorumlar": []
+    },
+    {
+        "isim": "Coffee Lab",
+        "osm_lat": 39.9061676,
+        "osm_lon": 32.8607376,
+        "yorumlar": [
+            "Ortam çok kirli her yer pislikten kararmış tavan alçısı vs düşmüş. Duvarlar çok kirli lavabolar felaket",
+            "Ürünleri her zaman taze ve lezzetli, çalışanları güler yüzlü, sıcak çikolatasına bayılıyoruz, kurabiyeleri ısıtarak vermeleri de çok güzel, fiyatları makul, otopark için yol üzerinde park edebilirsiniz, her zaman sakin ve kafa dinlenecek …",
+            "Selamlar, çok teşekkür ederiz🫶🏻 …",
+            "Personel kibar ve ilgiliydi. Servis oldukça hızlı. Ice americano tercih ettik lezzeti güzeldi. Kafe duvarlarında güzel çizimler mevcut, bence ortam olarak çok hoş. Fiyatları gayet uygun. Her masada priz bulunuyor.",
+            "Üst kat biraz fazla sesli ders çalışmak için yarı yarıya uygun çalışma alanları ,tatlı ve kahve önerileri için Turan bey’e teşekkür ederim lavabo kapılarını da demeden geçemiyceğim çok ağır ve tek kişilik",
+            "Buse Hanım merhaba,\n\nDeğerli yorumunuz ve detaylı geri bildiriminiz için teşekkür ederiz. Lavabo … Diğer",
+            "Çalışanlar müşterilere çok kaba ve saygısızca davranıyor bir daha adımımı bile atmam kesinlikle tercih edilmemesi gereken bir yer.",
+            "Eylül hanım ve Nisa hanım çok ilgili ve tatlılardı kahvem için garip istekler yaptığım hâlde memnuniyetle yaptılar çok da güzel olmuştu. Özellikle Eylül hanım için gelmeye devam edeceğim.",
+            "Güzel geri bildiriminiz için teşekkür ederiz. Eylül ve Nisa adına da memnuniyetinizi iletmiş olalım. Her zaman bekleriz 🫶🏼 …",
+            "Giderseniz mutlaka berry hot chocolate ı deneyin çok güzel yapıyorlar. Ayrıca Eylül hanım çok tatlı çok güler yüzlü 😊 …",
+            "Değerli yorumunuz için çok teşekkür ederiz 🫶🏼 Berry Hot Chocolate’ı beğenmenize ve Eylül’ün güler yüzünü fark etmenize çok sevindik. Sizi her zaman aynı keyifle ağırlamak için buradayız. Yine bekleriz 🫶🏼 …",
+            "Atmosferi çok beğendik üç kişi geldik Nisa hanım bizimle güzel ilgilendi teşekkür ederiz tekrar tercih edeceğimiz yer olacak mithat paşa coffee lab",
+            "Değerli yorumunuz için çok teşekkür ederiz 🫶🏼\nMithatpaşa durağımızda atmosferi beğenmenize ve Nisa Hanım’ın ilgisinden memnun kalmanıza çok sevindik. Güzel geri bildiriminizi kendisiyle mutlaka … Diğer",
+            "2 tane çay istedik alt tarafı 3 kişi çalışan var bir türlü veremedik sanki Karadeniz'de geliyo Cay , personel seçiminde dikkat ederseniz daha iyi olur",
+            "Benzer ve daha uygun fiyatlara, daha kaliteli kahve satan birden fazla hemde yakınlarda alternatifler var. Burayı marka olması dışında özel kılan hiçbir şey yok"
+        ]
+    },
+    {
+        "isim": "Mocaco",
+        "osm_lat": 39.9312266,
+        "osm_lon": 32.8260134,
+        "yorumlar": []
+    },
+    {
+        "isim": "Cafemiz",
+        "osm_lat": 39.8979214,
+        "osm_lon": 32.8657829,
+        "yorumlar": []
+    },
+    {
+        "isim": "Sunshine",
+        "osm_lat": 39.8898332,
+        "osm_lon": 32.7906931,
+        "yorumlar": []
+    },
+    {
+        "isim": "Kamara Coffee & Community",
+        "osm_lat": 39.9053521,
+        "osm_lon": 32.853039,
+        "yorumlar": [
+            "Genç hissetmek için mutlaka gelmelisiniz. Harika güler yüzlü gençler,  güzel kahveler ve mutlu bir kedi var daha ne olsun💫\nYiyecek yok ama kahve içmek için çok keyifli üstelik ortam çok güzel. Üniversite yıllarıma döndüm adeta. Şahane 💫🧿 …",
+            "Ders çalışmak için arkadaşlarla tercih ettik.Cok samimi bi ortam ve sessiz sakin, şefleri seray hanım çok samimiydi ve bizimle çok güzel ilgilendi.",
+            "Mekan çok güzel tasarlanmış fakat kahvelerini biz hiç beğenmedik. Oturuş olarak konforlu bundan kaynaklı birkaç saat keyifli vakit geçirdik fakat bir yerden sonra çalışanların arkadaşlarıyla dedikodularından ve negatif buluttan dolayı rahatsız olup kalktık. Tasarım olarak güzel olsa da tekrar tercih etmem.",
+            "Ders çalışmak için geldim; gayet ferah ve nostaljik bir mekan. Çalışanlar çok ilgili, şiddetle tavsiye ediyorum. Çok memnun kaldım.",
+            "muffine bayıldım ders çalışırken çok keyif aldım umut beyin ilgisi çok hoştu",
+            "Ayrancıya yolunuz düştükçe uğramanız gereken bir mekan. Tahinli kahve çeşitlerini denemeden geçmeyin derim :)",
+            "Çok keyifli bir mekan. İlginç kahve çeşitleri ve taze cheesecakeleri var. Sesameez isimli tahinli kahveleri çoook iyiydi. Kesinlikle deneyin.",
+            "Afiyet olsun! Her zaman bekleriz:)🎉\n …",
+            "Küçük tatlı bir yer. Güzel kahveleri var. Sık sık geliyoruz ders çalışmak için, küçük bir grupsanız kesinlikle öneririm.",
+            "Arkadaşınız ya da tek başınıza keyifle vakit geçirebileceğiniz mekan. Gittiğimde Onur isimli arkadaş vardı kahve konusunda bilgilerini aktardı, güzel vakit geçirdim.",
+            "Atmosferi ve çalışanları çok sıcak kanlı, kahveleriyle çok güzel bir mekan, kesinlikle önerimdir :)"
+        ]
+    },
+    {
+        "isim": "Butikek",
+        "osm_lat": 39.9568922,
+        "osm_lon": 32.7032936,
+        "yorumlar": []
+    },
+    {
+        "isim": "Tribeca",
+        "osm_lat": 39.8482152,
+        "osm_lon": 32.8323899,
+        "yorumlar": [
+            "Yemek için yapılmış mekan"
+        ]
+    },
+    {
+        "isim": "Starbucks",
+        "osm_lat": 39.8482915,
+        "osm_lon": 32.8325788,
+        "yorumlar": []
+    },
+    {
+        "isim": "Gloria Jean's",
+        "osm_lat": 39.8485969,
+        "osm_lon": 32.8334941,
+        "yorumlar": [
+            "Mobil uygulamalarından gelmiştim ama personel sadece Ankamall'deki şubede geçerli olduğunu söyledi. Ne alakası var anlamadım burası onların şubesi değil mi yani. Chai tea latte içmek istedim sıcak yokmuş o yüzden soğuk verdiler. Param çöp oldu resmen. Evet iç dekorasyon güzel ama çok gürültülü. Ayrıca personelleri çok ilgisiz ve kaba.",
+            "Merhaba,\nÖncelikle yaşadığınız olumsuz deneyim için üzgün olduğumuzu belirtmek isteriz. Carmelo Coffee olarak amacımız misafirlerimize her zaman en iyi hizmeti … Diğer",
+            "Kajun tarzı hiçbir şey tüketmeyi sevmiyor olmama rağmen mecburen oturduğumuz mekanın double chicken burgeri harikaydı. Oturma düzeni(içecek alanlar ayrı yere, yiyecek alanlar farklı yere teras karma) biraz karışık geldi ama sonra anlamlandırdım, mantıklı.",
+            "Merhaba,\nGeri bildiriminiz için çok teşekkür ederiz! Carmelo Coffee olarak  sizlere en iyi hizmeti sunmak bizim için büyük bir mutluluk. … Diğer",
+            "Merhaba arkadaşlar, mekan için şunu söylücem, iki güzel soğuk kahve içelim diye uğradık ice caramel machito söyledim cm yazan gördüğünüz gibi buz yok neresi ice? Ayrıca L boy söyledim, kahve M boy, kalanı buz boy galiba buz da eklenmeyince …",
+            "KESİNLİKLE OKUYUN\n2 adet More Nar Suyu (KAPALI ŞİŞE) siparişi verdim. Elbet bunları Kafamıza dikmiyeceğimiz için ve YAZ olduğu için buzlu bardakta Servis İstedim ANCAK BUZLU …",
+            "Mekan aşırı pisti, sigara izmaritlerini temizlemek nasıl bu kadar zor olabilir anlamıyorum. Mekanda bulunan hanımefendiye masayı silebilir misiniz dediğimde ağız bükerek geldi sildi sonrasında da bunlar bir yerde çalışmadan anlayamaz diye …",
+            "Puanı nasıl hala bu kadar yüksek anlamak mümkün değil. Büyük ihtimalle Kızılay'daki en kötü kahveyi burada bulabilirsiniz. Lette istediğiniz zaman sadece süt geliyor. Çalışanların umurunda değil tamamen kendi kafalarına göre takılıyorlar. …",
+            "Kesinlikle tavsiye etmem. Kahve yapmayı bilmeyen bir yer. Çalışanlar sanki maaşını benden alıyorda geç vermişim gibi davranıyor. Ne gülümseme var ne tebessüm var bir daha bedava olsa gelmeyeceğim bir yer. Bu arada Kahve tadı da yok sadece sıcak o kadar.",
+            "Kahve lezzetliydi ama paraya dokunan kişi kahve yapmasın ya da yaparken biraz daha titiz davranabilir. Ön bahçe klasik self servis cafe görünümlü, arka bahçe ise biraz kasvetli ve soğuk. Öğrenciler için hem yemek yiyebilecekleri hem de ders …",
+            "Lütfen bu şubeyi tekrar açar mısınız? En sevdiğimiz kafeydi ve atmosferi çok güzeldi🥹 …",
+            "Sakin ve güzel bir cafe öğrencilere ekstra indirim sağlamakta ve sigara içme alanı da mevcut"
+        ]
+    },
+    {
+        "isim": "Mado",
+        "osm_lat": 39.9042786,
+        "osm_lon": 32.8090867,
+        "yorumlar": [
+            "Öğle saatlerinde yemek amacıyla mekânı tercih ettim. Ancak içeride nargile tüketimi olması, mekânın bu yönünün belirtilmemesi beklentimle uyuşmadı. Gündüz saatlerinde yemek için gelen misafirler açısından bu durum rahatsız edici bir …",
+            "Kahvaltı deneyimledik. Dolu dolu ve lezzetliydi. Keyifli ortamı var.\nDetayları Instagramdaki @yiyelim_icelim_ankara sayfasında bulabilirsiniz 🌸 …",
+            "Ailece oturduğumuz pazar kahvaltısı 💚\nHer şey mükemmeldi\nSıcaklar on numara …",
+            "Fiyatlar aşırı derecede pahalı olması dışında herşey çok güzel. Yoğun nargile kokusu dışında ortam da çok güzel. Garsonların ilgisi fena değil. Tertemiz bir mekan. Otopark sorunu yok. Sunumlar güzel tatlıları lezzetli.",
+            "Okey oynamaya gittik mısırları garson getirdi ikram diye bıraktı sipariş verdik fakat çerez söylemedik onuda getirip ikrammış gibi bıraktı gitti hesabı ödedikten sonra fark ettik 50 gram ya var ya yok kuruyemişlere 920 tl geçirmişler böyle yaparak müşteri kaybedersiniz hocam",
+            "Soğuk bir Ankara gezimizde çocuklarım ile birlikte mükemmel in de üzerinde bir kahvaltı yapma imkanı oldu. Özellikle şef Yalçın bey özellikle ilgilenip gösterileri büyüledi. Teşekkürler herşey için 🙏🏻🙏🏻🙏🏻 …",
+            "Farkettiyseniz samimi yorumlarda 5 yıldız olanlar abartı yorumlar, düz bir şekilde iyiydi beğendik diyip objektif yorum yapan pek yok. Çünkü böyle yorum yapanlar hep 1 vermişler. :) Muhtemelen yazılan olumlu yorumlar çalışanların …",
+            "Kahvaltı için tercih ettik serpme kahvaltı aldık ek olarak kuymak ve çakallı menemeni söyledik. Tüm ürünler lezzetliydi. Portakal suyu kaşarlı gözleme güzel detaylardı. Kahvaltı sonunda Türk kahvesi ikramı mevcut menüde de yazıyor. …",
+            "Kahvaltı için gittik,ambiyans güzel,hizmet gayet iyiydi.Kahvaltıda çay,peynir çesitleri,menemen,sosis,yumurta,reçel çesitleri,börek,simit,poğaça,patates kızartma,gözleme,zeytin ve birkaç kahvaltılik daha vardı,peynir ve patates kızartmasini …",
+            "Oyun için gittik üst kat kapalı alan, duman altı.\nÇerez istedik 2500 tl para verdik, ödemekte sorun yok ödedik ama normal olmadığını düşünüyorum. Çay salep içerek dumanın sesin içerisinde 7500 tl hesap ödedik. Garsonların da kafede sürekli bahşiş beklentisini anlamadım."
+        ]
+    },
+    {
+        "isim": "Starbucks",
+        "osm_lat": 39.9009315,
+        "osm_lon": 32.6913224,
+        "yorumlar": []
+    },
+    {
+        "isim": "Hoşbeş Cafe",
+        "osm_lat": 39.867968,
+        "osm_lon": 32.8654124,
+        "yorumlar": []
+    },
+    {
+        "isim": "Zeynel",
+        "osm_lat": 39.8762808,
+        "osm_lon": 32.6802794,
+        "yorumlar": [
+            "Iki kişilik serpme kahvaltı 58 tl ama 4 kişi rahat doyuyor o yüzden fiyat performans iyi ürünleri kaliteli ve lezzetliydi sıcak olarak sucuklu yumurta veya menemenden birini seçebiliyorsunuz yani biri alırsanız ekstra oluyor  çay 1 pot …",
+            "Yolun kenarında ama araç sesinin rahatsız etmediği hoş bir mekan.\nAkşam yemeği sonrası tatlı yemeğe gittik. Tatlı olarak Kadayıflı Muhallebi yedim ve gerçekten çok beğendim. Çay konusunda biraz daha çalışmaları gerekiyor. İlk …",
+            "Çok güzel bir yerde faaliyet gösteriyor. Sadece kafe olarak değerlendirilebilir. Alıştığımız Zeynel  çorbası yerine sıcak su içtik sadece.",
+            "Ana ürün olan tavuk midye normal standardı ile alakası yoktu, bildiğiniz düz tavuktu kabarıklık hiç yoktu. Yan ürün olan patatesin çok daha fazla olması çok tuhaftı.",
+            "Geniş bir yeşil alanın köşesinde yer alıyor. Bahçesi dinlenmek için tercih edilebilir, doğum günü vb organizasyonlara da ev sahipliği yapıyorlar.\n2432. caddeden geldiğinizde Atapark, Sim dordurmacıdan döneceksiniz. İlk trafik …",
+            "Doğanın içinde, güzel, sade ve temiz bir yer, menüler lezzetli , fiyatlar semte göre uygun..hizmet hızlı ..",
+            "125₺ kahvaltiya etiket koyuyolar ama beklemiş peynir, soguk sigara böreği getirmeye utanmiyolar",
+            "13 mayıs tarihinde yediğimiz öğlen yemeğinin üzerine içtiğimiz 6 çay için 58,50 lira hesap yazan işletme kişibaşı yenilen tavuk-pilav-ayranı ana yemek olarak saymadığı için üzerine içilen çayların hesaba yazıldığını belirtti. İşyerimiz bu bölgede bulunduğu için ilk defa denemek istedik fakat bir daha tercih etmeyeceğiz.",
+            "Her zamanki gibi lezzetli yemekler ve güzel tatlılar.  Servis biraz lakayt gibiydi ama Çayyolunda açtığı yer o kadar güzel bir ortam ki( parkın içinde ve yemyeşil,  Zeynelden önceki mekanlarda da sık sık giderek zevkle zaman geçirirdik) …",
+            "Buraya 23 nisan aksami sutlu tatli yeriz, cay kahve iceriz, laflariz diye geldik. O da ne, ortalik cok sakin, aman ne iyi kopegimizi de yanimiza aliriz, acik kisimda otururuz dedik, girdik iceri oturduk. Cok kibar genc bir servis elemani …"
+        ]
+    },
+    {
+        "isim": "Balkon",
+        "osm_lat": 39.8773882,
+        "osm_lon": 32.6790524,
+        "yorumlar": []
+    },
+    {
+        "isim": "Starbucks",
+        "osm_lat": 39.8817842,
+        "osm_lon": 32.6857143,
+        "yorumlar": []
+    },
+    {
+        "isim": "Jön Lounge",
+        "osm_lat": 39.8712658,
+        "osm_lon": 32.6813124,
+        "yorumlar": []
+    },
+    {
+        "isim": "Leda",
+        "osm_lat": 39.8737881,
+        "osm_lon": 32.6850881,
+        "yorumlar": [
+            "Kütahya vefa kentsel dönüşümden T2 10 blokta dairem var televizyonlar çekmiyor defalarca yönetime söyledik firma yapacak diyorlar firma personeline söylüyoruz usta gelecek diye 4 aydır oyalıyorlar lütfen magduriyetimizi giderin artık tesekkurler",
+            "Balıkesir altıeylül gaziosmanpaşa toki 4. Etapda A 9 da hak sahibiyim.  Şebeke suyu bağlanmadığı için  bina altındaki depoya baskı tankerle su taşıyor fakat depomuz çatlak.  Şantiye şefine defalarca söylememize rağmen yapılmadı.  Su …",
+            "Yüksek puan veren kişilere aldanmayın, muhtemelen hepsi Leda’nın eş, dost akrabasıdır. Leda Gruptan 2023 yılında Küçükçekmece’de kentsel dönüşüm projesi olan Gözde sitesinden bir daire satın aldık. Firma tarafından taahhüt edilen bahçe …",
+            "Ankara merkezli kurumsal bir firma olan Leda Grup, Profesyonel yönetici ve kadrosu ile kalite anlayışını en üst seviyede tutan, yaptığı işlerle kendisini her alanda  kanıtlayan, Yurt içinde  ve yurt dışında ki  yatırımları ile istihdama çok …",
+            "Üç günde Avusturya’dan Ankara’ya gel\nSekiz gündür evrak bekle sonra herşeyi aşmış kurumsal firma\nSekiz gündür Ankara lojistik üstünde gümrük açamadınız….\nHakkım zehir zıkkım olsun",
+            "Ne istediğinizi biliyorsanız doğru yönlendirme ile ihtiyacınızı karşılayan kaliteli hizmet.\nTercih ettim ve tavsiye de edeceğim.",
+            "Türkiye standartlarını aşmış kurumsal kimliğini oturtmuş.\nKaliteyi düstur edinmiş inşaat firması.",
+            "Başarılı bir şirket.",
+            "Sivas 762 Toki Konutunu bir türlü teslim edemeyen şirket..",
+            "kurumsal ve başarılı bir firma"
+        ]
+    },
+    {
+        "isim": "Çimen Cafe & Bistro",
+        "osm_lat": 39.8820765,
+        "osm_lon": 32.6850031,
+        "yorumlar": []
+    },
+    {
+        "isim": "Koza pastenesi",
+        "osm_lat": 39.9621574,
+        "osm_lon": 32.8877157,
+        "yorumlar": [
+            "Ekler ve mini pastaları çok taze olur her zaman. Mahallede olduğu için sık sık uğrarız. Seviyoruz.",
+            "Sattıkları Dubai çikolatası küflü çıktı. Streç filme sarılmış açar açmaz parçalandı ve kırılan yerlerin kenarlarından pamukçuk gibi küflenmiş içi zaten belli. Yazık o paraya böyle ürün !",
+            "Universite sınavı icin geldigimiz okulun tam karsisinda. Türkiyedeki Fırsatcı diye tabir ettiğimiz utanmaz esnaflardan biri. Sınav kalabalığı var diye ufak kağıt bardakta çayı 30 liraya sattılar. 5 liralık suyuda 15 liraya veriyorlar. Zaten genelde sınav için yolunuz düşer düşerse kapısından girmeyin.",
+            "Ürün çeşitleri gayet güzel, bölgedeki fiyatlara gorede en iyisi burası desek yanlış olmaz sanırım.",
+            "Az önce verdim şiparişimi hızlı geldi fakat içinden saç çıktı",
+            "Yıllardır dogum günlerinde pastalarımızı yaptırdıgımız  temiz ve taze ürünleri çok iyidir , yıllardır güler yüzlü hizmetleri ailecek memnuniyet  duydugumuz  mahallemizin pastanesini",
+            "Tatlısına tuzlusuna kefilim hem fiyatları çok uygun hem çok kaliteli kendilerini hiçbir zaman bozmuyorlar",
+            "Mekan sakin sarma dediğimiz tatlı fena değildi biraz şerbet ayarı yapılmalı haricen gerçek fıstık kullandıklarına kanaat getirdim çay için biraz olumsuz olabilirim az biraz acı lik vardı",
+            "Bu pastanede stajyer çocuğu 80 kg un çuvalını taşıyamadı, döktü diye ıslak havluyla dövmüşler. Çalışanlardan biri şikayet ediyordu diğerine. Şikayet dinleyen çalışıyordu. Diğeri de sadece dert anlatmakla ilgileniyordu. Beni fark etmediler. …",
+            "Harika taze ve kaliteli ürünleri herkese tavsiye ederim"
+        ]
+    },
+    {
+        "isim": "Merkez kantin",
+        "osm_lat": 39.935846,
+        "osm_lon": 32.831207,
+        "yorumlar": [
+            "Ankara sincan andiçen mahallesi Dr. Nurettin beyhan ilkokulunda kantin fiyatları çok uçmuş durumda denetleme gelmesini talep ediyoruz okul velileri olarak çok mağduruz. Çocuklarımıza kantin ihtiyaclarını alamıyoruz",
+            "Her oda üyelerine bu kadar katkı sağlasa hiçbir esnafımız madur olmazdı. Değerli başkan Bayram şahin ve ekibi sektör için elinden geleni yapmaktadır. Adresin değişip menekşe 2 sokak a geçmeside doğru tercih olmuş ilçe binasına yakın olduğu için işlemler hızlanıyor.",
+            "Tüm evraklarınızı hazırlayıp gidiyorsunuz şartnamede olmayan bir evrağı sizden istiyorlar belge vermek için 76 TL ücret istiyorlar bütün para verirseniz ucu ucuna para istiyorlar. Sizden para istiyorlar ama para üstü verecek parayı …",
+            "Kantin esnafının sorunlarını çözmek için kurulmuş kurucu başkanın 4 seçimi de kazanarak halen görevde olduğu bir kurumdur. sevilen bir idareci olan Bayram şahin hem Ankara hemde civar illerin kantinlerinin sorunlarını durmadan değişen milli …",
+            "Odaya gidiyorsunuz kimse yok çaycı dan başka.. O bakıyor evraklarını o eksik bu eksik diyor.. Artık kadın ne kadar tecrübe sahibi olmuşsa Bir imza atamıyor bence imza yetkisi çaycı ya verilsin çünki mesai saatleri içerisinde sadece odada o var defalarca gidiyorsunuz bayram bey yok.. Her gittiğinizde park parası 20 TL ödüyorsunuz..",
+            "Oda gerçekten başarılı,  esnafın her isteği titizlikle cevaplaniyor , bu seneki kira artış oranı %25 için çok mücadele verdiler emekleri  takdire şayan, teşekkürler Baskan",
+            "Bayram Şahin yönetimindeki\nAKO üyelerinin tüm sorunlarını halletmek üzere büyük çaba göstermekte tebrik ederim",
+            "9 dan önce giderseniz kapıda kalma ihtimali niz var yakınında ücretli bir otopark var ve biraz pahalı",
+            "İşleriniz kısa zamanda çözuluyor. Çalısan bayanlar nazik ve işini biliyor",
+            "HER BELGEDE 70 LİRA. SOYGUNCULUK BAŞKA BİRŞEY  DEĞİL!!!"
+        ]
+    },
+    {
+        "isim": "Starbucks",
+        "osm_lat": 39.9179292,
+        "osm_lon": 32.8546868,
+        "yorumlar": []
+    },
+    {
+        "isim": "FMD Cafe",
+        "osm_lat": 39.9681719,
+        "osm_lon": 32.8795654,
+        "yorumlar": []
+    },
+    {
+        "isim": "Funda Cafe",
+        "osm_lat": 39.8559792,
+        "osm_lon": 32.6458714,
+        "yorumlar": []
+    },
+    {
+        "isim": "Cafe Botanica",
+        "osm_lat": 39.9046431,
+        "osm_lon": 32.8622922,
+        "yorumlar": []
+    },
+    {
+        "isim": "Sardunya",
+        "osm_lat": 39.9066245,
+        "osm_lon": 32.8621259,
+        "yorumlar": []
+    },
+    {
+        "isim": "Starbucks",
+        "osm_lat": 39.9220075,
+        "osm_lon": 32.8260541,
+        "yorumlar": []
+    },
+    {
+        "isim": "İkbal's Kafe",
+        "osm_lat": 39.5840509,
+        "osm_lon": 32.1406054,
+        "yorumlar": [
+            "Çalışanlara ve İşyeri sahibine çok teşekkür ederim. İlgi alakaları hizmet çok başarılı\nKuymak ve Börek Tavsiye ederim",
+            "Değerli yorumunuz için çok teşekkür ederiz 🙏\nİkbal’s Pastane & Cafe olarak misafirlerimizin memnuniyeti, ilgiyi ve samimiyeti hissetmesi bizim için her şeyden önce gelir. Çalışanlarımız ve işletme … Diğer",
+            "Her şeyi rezalet, buranın yerlisi olarak inanılmaz ilgisizsiniz, 1 mumun lafını yapan seviyesiz kişilersiniz, keşke yakınım yerine ben olsaydım orda da başka düzeyde iletişim kursaydık …",
+            "Merhaba, yorumunuzu üzülerek okuduk.\nÖncelikle şunu net olarak belirtmek isteriz:\nPastalarımızla birlikte standart mumlar ücretsiz olarak sunulmaktadır. Özel ve … Diğer",
+            "Tatlıları,yemekleri, içecekleri gayet lezzetliydi sadece cheesecak' imin üzerinde saman sapı gibi bir şey vardı.Çalışan beyefendi o küçük şeye rağmen değiştirmek ister misiniz diye sordu.Çok güzel bir jest.Atmosfer gayet güzel sıcak bir ortam.Hizmete gelecek olursak 10/10 bir hizmet vardı.",
+            "Merhaba, değerli yorumunuz için çok teşekkür ederiz. 🙏\nÜrünlerimizi ve ortamımızı beğenmiş olmanız bizleri çok mutlu etti. Cheesecake üzerindeki küçük detay için özür dileriz; çalışanımızın durumu fark edip size … Diğer",
+            "Polatlının En eski pastahanelerindendir. Ekler pastasını başka bir yerde bulmak mümkün değil. Bu akşam karadutlu ilk deneyeceğiz. Yenilikçi ve güleryüzlü işletmedir. Keşke arabaya park yeri bulmak mümkün olsa. …",
+            "Uludağ tatlısını bozmuşlar , defalarca telefonda belirttim ama yine aynı kötü ürün geliyor . Uludağ tatlısını orijinale döndürmeleri gerekir .",
+            "Merhaba, değerli geri bildiriminiz için teşekkür ederiz. 🙏\nUludağ tatlısıyla ilgili yaşadığınız memnuniyetsizlik için üzgünüz. Sizden gelen her geri bildirim bizim için çok kıymetlidir. … Diğer",
+            "Kesinlikle ne lezzetli ne de fiyatı makul. Kahvaltı tam bir fiyasko. Ben paramı çöpe atacağım diyorsanız tam size göre bir yer.",
+            "Değerli geri bildiriminiz için teşekkür ederiz. Kahvaltımız konusunda yaşadığınız memnuniyetsizlikten dolayı üzgünüz. Ürünlerimizi her zaman taze ve özenle sunmaya gayret ediyoruz. Görüşleriniz ekibimizle paylaşılmıştır, sizleri tekrar ağırlamaktan mutluluk duyarız.",
+            "Ekleri, kuru pastası harika. 500 TL lik ürünü sadece bir telefon ile Ankara ya 1 kuruş almadan gönderdi. 1 TL kaparo almadan telefonla doğum günü pastası sipariş ettik hemen yapıldı. Müşterilere verdiği güven ile kimse kusura bakmasın Polatlı'da benim için her zaman 1 numara ikbals'dir. Tatile giderken de öyle .",
+            "İkbals bistro servis,hizmet ve ürün kalitesi ile öne çıkmaktadır. Fiyatarı uygun. Müşteri memnuniyeti herzaman önemseniyor.",
+            "Cordon bleu istedim ilk çok pişmiş geldi bildiğiniz taş gibi, eğer normalde yaptıkları buysa istemediğimi söyledim sonra değiştirdiler getirdiklerinin içinde ise jambon yoktu göstermeli salam olur o bile yoktu. Onu söyledigimde de bazen …",
+            "Bugün aksam soğuk baklava siparişi verdik. Gelen soğuk baklava bayattı, hamurlaşmıştı ve ağızda acı bir tat bırakıyordu. Misafirlerimiz için sipariş etmiştik ve mahcup olduk. Firmayı aradığımızda bi mahcubiyet bekledik açıkça ama neredeyse …"
+        ]
+    },
+    {
+        "isim": "Midas Kafe",
+        "osm_lat": 39.5842985,
+        "osm_lon": 32.1420828,
+        "yorumlar": []
+    },
+    {
+        "isim": "Sakarya Cafe",
+        "osm_lat": 39.5803482,
+        "osm_lon": 32.1426702,
+        "yorumlar": []
+    },
+    {
+        "isim": "İstasyon Cafe",
+        "osm_lat": 39.5848938,
+        "osm_lon": 32.1412084,
+        "yorumlar": []
+    },
+    {
+        "isim": "Cesa Cigkofte",
+        "osm_lat": 39.5845217,
+        "osm_lon": 32.1428043,
+        "yorumlar": []
+    },
+    {
+        "isim": "Marco Pasha",
+        "osm_lat": 39.9230163,
+        "osm_lon": 32.8257488,
+        "yorumlar": [
+            "4 kişi geldik. Ortaya 4 kişilik karışık tabak söyledik. Patates dışındaki herşeyi kötüydü. Börek biraz hamurdu. Tavuk lezzetli değil. İkram olarak gelen patlamış mısır çok iyiydi. Bira kovası aldık. Kişi başı 460 tl ödedik. Ortam güzel. Garsonlar kibar",
+            "Rezalet bir işletme yemek söyledik 4 çeşit hepsi buz gibiydi soğuk dedik ve yemeği ısıtıp getirdiler eliyle test ettiği yemeği bize geri getirdi tuvaletler rezalet garson ilgisi ve güler yüz sıfır su istedim ve direk şişesiyle geldi bardak vs asla yok",
+            "Resimlerden de anlaşılacağı gibi Marco Paşa’nın eski mekanı. işletme oldukça büyük canlı müzik yapılıyor akşamüstü ziyaretinde uğradık menüsü iyi kızarmış patates ve kaju tavuk lezzetli ama serviste aksama var bardaklar şoklu bardak …",
+            "Yılbası gecesi yemek yemeye gittik üst katta oturuyorduk ve adisyonda yazılmamasına rağmen bizden 300 tl servis ücreti istediler o an düşünmeyip verdik ama bunun doğru olmadığını düşünüyorum",
+            "Akşam iş çıkışı arkadaşımla muhabbet ve içmeye gittik. Muhabbet koyu olunca geldiğinde çekmeyi unutmuşum.  4 kişilik sıcak sepeti söyledik lezzetliydi güzeldi. 2 kişi tıka basa doyarak biranın yanında yedik en güzel eşlikçi 👍🏻Sos istedik …",
+            "Daha fazla para kazanmak için nerdeyse insanları kucak kucağa oturtacaklar. Sigara ve nargile içilsin diye her yeri açık yapıp masanın altına havalandırma koymuşlar. Alttan yanıp üstten donabilirsiniz. Ama diğer şube daha beter. Kahvaltı …",
+            "2 kişilik adı altında sattığınız sıcak sepet hiç de 2 kişilik değildi. Hizmet de güzel değildi uzun süre garsonlara el kaldırdık seslendik bakmadılar gelmediler. Beğenmedim",
+            "Biz haftaiçi sabah kahvaltıya gittik.. Çok sakindi boş denecek kadar sakindi hatta.. Kahvaltı güzeldi, sıcaklar gayet sıcaktı 😊yeterliydi, çay biter bitmez tazeleniyor, servis hızlı garsonlar işlerini iyi yapıyorlardı. Fiyat olarak da gayet makul, mekan güzel.. Sahnesi ve barı güzel görünüyordu, akşam gelmek lazım😃güzeldi.. …",
+            "Kaşarlı Omlet cadde üzerinde yediğim fiyatına göre en güzel omletti öncelikle ama 103₺ omletn olduğu bir mekanda çaya 50₺ yazmaları gerçekten şaşırtıcı geldi. Çok tercih ettiğim bir mekan değil, kahvaltı için falan uğrayabilirsiniz.",
+            "Bira zaten şişe ona tamamız.Fiyatlar biraz yüksek.Dışardaki fiyat listesini görünmesin diye konumlandırmışlar. 😂 Tuzlu fıstık aldık bayat ve kalitesizdi.Tercih edilecek bir yer maalesef değil.İlk açıldığı zamanlara göre bayağı vasatlaşmış. …"
+        ]
+    },
+    {
+        "isim": "76. Yurt Kantini",
+        "osm_lat": 39.8645743,
+        "osm_lon": 32.7478292,
+        "yorumlar": []
+    },
+    {
+        "isim": "75. Yurt Kantini",
+        "osm_lat": 39.8640987,
+        "osm_lon": 32.7479123,
+        "yorumlar": []
+    },
+    {
+        "isim": "Sofa Cafe & Restaurant",
+        "osm_lat": 39.8642605,
+        "osm_lon": 32.749174,
+        "yorumlar": []
+    },
+    {
+        "isim": "Cafe In",
+        "osm_lat": 39.8699384,
+        "osm_lon": 32.7505929,
+        "yorumlar": []
+    },
+    {
+        "isim": "Asmalı Konak",
+        "osm_lat": 39.8724313,
+        "osm_lon": 32.7507457,
+        "yorumlar": []
+    },
+    {
+        "isim": "Mozart Cafe",
+        "osm_lat": 39.8720821,
+        "osm_lon": 32.7510684,
+        "yorumlar": [
+            "Arada bir gidip kendinizi salataya boğa bilirsiniz. Çok fazla seçenek var ama salata çeşitleti benim favorim. Mekan ne kadar dolu olursa olsun o tabaklar her zaman süslü geliyor. Mekan serin ferah. teşekkürler.",
+            "Kahveleri harika. Fiyatları buna rağmen çok uygun. Çekirdek olarak alabiliyorsunuz veya demleme yönteminize uygun olarak çektirebiliyorsunuz. Salataları ve diğer yiyecekleri doyurucu ve kaliteli malzemeden.",
+            "Ben hiç gitmedim ama kahvemi burdan alıyorum. Bu yüzden yazmak istiyorum. Öncelikle WhatsApp uygulamasından kolaylıkla sipariş verebiliyorsunuz, sizin tüm sorularınızı anında cevaplıyorlar. Hiç bekletmeden de gönderiyorlar. Örneğin ben dün …",
+            "Değerli yorumlarınız için çok teşekkür ederiz.\nSağlıklı günler dileriz",
+            "asiri hizli ve ucuz tamam ama makarnanin tadi o kadar kotuydu ki anlatamam kokusu cok agirdi bozuk gibiydi ve inanilmaz lezzetsiz ben sef makarnasi yedim sef spesiyal buysa digerlerini dusunemiyorum,, pogacalari fena degil",
+            "Ayca Deniz hanım zaman ayırıp, yorum yaptığınız için çok teşekkür ederiz. Bizler için olumlu olumsuz dönüşleriniz çok değerli.\n2000 yılında ilk defa menümüze koyduğumuz, içerisinde şarküteri ürünleri olan, … Diğer",
+            "4 yıldır düzenli gidiyoruz. Tavuklu noodle'ı güzel (York kadar iyi değil haaaa!!!). Sezar soslu makarna sıcak servis edilmeli çünkü buz gibi makarnaya 280TL verenin aklı yoktur. Çorbaları da güzel. Sipariş bekleme alanları çok daracık; öğle …",
+            "Mezun olalı 12 sene oldu. Hâlâ buranın kahve ve cookie'si çok daha leziz geliyor. Güler yüzleri de cabası... Ellerinize ve yüreğinize sağlık, ne zaman Ankara'ya gelsem kesinlikle bir cookie-kahve benim klasiğimdir...",
+            "Çok temiz ve kaliteli bir işletme. Ürünlerinde kullandıkları malzemeler özel. Yiyecekleri lezzetli ve fiyatlar porsiyonlara göre çok uygun.\nKahvelerini kendileri kavuruyorlar, bu da önemli bir artı.",
+            "Tavuk dürümü aldım (Not: Kendileri Türkçe kelimeler kullanmak yerine \"Chicken Wrap\" gibi bir seyler diyor), o zaman (1-2 ay once) 165 TL idi. Dürümün tadı güzeldi ama porsiyon çok küçük. Yanında patates kizartmasiyla geliyor, ve çeşni …",
+            "Çok boğuk iğrenç bir mekan. Bilkentin diğer yerlerine kıyasla loş sıkışık bir ortamı var. Ürünleri fena değil ama şuan çok kızgınım. Burada birçoğumuz öğrenciyiz ve yurtta kalanlar olarak imkanlarımız kısıtlı olabiliyor. Çevrede öğrenciye …",
+            "Hüseyin bey öncelikle geçmiş olsun, hasta halinizle zaman ayırıp yorum yaptığınız için teşekkür ederiz. Olumlu, olumsuz bütün yorumlarınız bizim için çok değerli. Sizlerin sayesinde bizlerde verdiğimiz hizmetin doğru veya yanlışlığını … Diğer",
+            "Mozart eski Mozart değil. Çok kötü bir tost yedim. Karışık diye sattıkları tostun içinde boş nidratli tavuk salamı ve kaşar var. Midem bulandı resmen. Öğrenciyken çok kaliteli gelirdi burası yıllar içinde resmen öğrenci kantininden hallice …",
+            "Mustafa bey merhaba, mezuniyetinizden sonra tekrar ziyaretinizden ve değerli yorumlarınızdan dolayı teşekkür ederiz. Yazdığınız gibi elimizde tavuk salam bulunmamakta, nitratlı mı diye kontrol ettim, içeriğinde öyle bir karışımda görmedim. … Diğer"
+        ]
+    },
+    {
+        "isim": "Coffee Break",
+        "osm_lat": 39.8704448,
+        "osm_lon": 32.7496624,
+        "yorumlar": []
+    },
+    {
+        "isim": "Mozart Cafe",
+        "osm_lat": 39.8688679,
+        "osm_lon": 32.7481628,
+        "yorumlar": []
+    },
+    {
+        "isim": "Coffee Break",
+        "osm_lat": 39.8681957,
+        "osm_lon": 32.7491127,
+        "yorumlar": []
+    },
+    {
+        "isim": "Cafe Alis",
+        "osm_lat": 39.8670611,
+        "osm_lon": 32.749868,
+        "yorumlar": []
+    },
+    {
+        "isim": "Fiero Cafe",
+        "osm_lat": 39.8680811,
+        "osm_lon": 32.7496064,
+        "yorumlar": [
+            "Çok güzel bir kahveci, bahçelinin kalabalıklığından ve gürültüsünden uzak, köpek dostu ve samimi bir yer. Sahibi bizzat ilgileniyor ve servis harika. Bizimle baristalardan Gürhan ilgilendi kahvesi çok lezzetliydi tekrardan eline sağlık. Mutlaka tekrar uğrayacağımız bir yer.",
+            "Yıllardır Ankara’da yaşıyorum. Kahve içmek için pek çok yere gittim ama açık ara en iyisi burası. Hem kahveleri hem tatlıları hem sandiviçleri her zaman çok güzel, lezzetli ve taze. Çalışanlar da bir o kadar güler yüzlü ve ilgililer.",
+            "Bizimle ilgilenen kişi kahveleri ve tatlıları hakkında gayet detaylı bilgiler verdi ki böyle olmasını çok seviyoruz. Kahvesi ve tatlıları çok güzeldi. Sakin zamanlarda gitmeyi düşünüyorum.",
+            "Ankarada denediğim kahveciler arasında net en iyilerinden. Kahve alırken pek çok farklı demleme yöntemi ve çekirdek seçeneği sunuyorlar ve gerçekten işin ehli olduklarını anlıyorsunuz. Bugün içtiğim v60ları tam istediğim gibi değildi , …",
+            "eskiden çok sık giderdim haftada 2-3 kere çok yenilikçi kahve çeşitleri vardı. yazın özellikle portakal suyu ile yapılan cold brew inanılmaz güzeldi. ama biraz kahvehaneye dönmüş  yani tamam genç bir kitle var güzel ama dipdibe yüksek sesli …",
+            "Çok sevdiğim bir kahveci o bölgede isem nerdeyse hep burayı tercih ediyorum\nKahve lezzetli olduğu gibi bilgi notu ile geliyor. Atmosfer çok keyifli. Aldığım cheesecake de çok iyi idi. Kendi yapımları imiş. Sakince oturmak ve yazın keyfini çıkarmak için birebir",
+            "kahveleri gereksiz pahalı ama damla sakızlı latte lezzetliydi. bu kadar para verdikten sonra kırık bardakta servis etmelerine de çok anlam veremedim açıkçası",
+            "Butik şirin bir kahveci, her şey çok özenli. Damla sakızlı ve bal bademli latte denedik, özgün lezzetler. Tatlı olarak lotus cheesecake çok güzel. Yine gelirim.",
+            "Arkadaşlarla önümüze çıkan ilk cafeye oturacağız dediğimiz ve keşfettiğimiz mekan 😊Güzel sakin bir atmosferi var daha fazla insanın keşfetmesi için yorum yapmak istedim.. Kahve ve İncirli cheesecake güzeldi .Lavabo temizdi ekstra ince …",
+            "Drupe Bahçelide tavsiye üzerine tercih ettiğim bir işletme oldu. Bahçelinin kalabalık, kaotik ortamı içerisinde gerçekten sakin, nezih bir kafe. Kahveleri ve özellikle atmosferi oldukça güzel, tuvaletleri temiz. Bundan sonra Bahçeli’ye geldiğimde sürekli tercih ettiğim bir mekan olacak."
+        ]
+    },
+    {
+        "isim": "Express Cafe",
+        "osm_lat": 39.8684651,
+        "osm_lon": 32.7502193,
+        "yorumlar": []
+    },
+    {
+        "isim": "Coffee Break",
+        "osm_lat": 39.8694327,
+        "osm_lon": 32.749943,
+        "yorumlar": [
+            "Berry cake, bir matcha latte ve bir latteye toplam 590 tl verdik. Fiyatların piyasaya göre normal olduğunu düşünüyorum. Ayrıca lezzet olarak oldukça başarılıydı. Alaçatı konsept her ne kadar sevmesem ve önyargılı olsam da kahvesini içince fikrim tamamen değişti. Ama konsept kışa uygun değil, içerisi gerçekten soğuk.",
+            "Kendimi buraya geldiğimde Ankarada değil de Alaçatıdaymış gibi hissettim. Çok ferah ve çok nezih bir mekan. Çalışanları güleryüzlü ve çözüm odaklı. Sipariş verirken söylemeyi unuttuğum laktozsuz sütü sipariş hazırlanırken söylememe rağmen …",
+            "Mekan iki kattan oluşuyor, alt katında kocaman bir bahçesi üst katta ise bir küçük bir büyük teras bulunuyor. Hem kısa süreli oturmalar için hem de uzun vakit geçirmek için güzel bir yer olduğunu düşünüyoruz. Tatlı içecekler sevenler için …",
+            "Yoldan geçerken denk gelip uğradım, ortamı oldukça sakin ve keyifliydi. Kahvesi de beklentimin üstündeydi. Tekrar gelinir",
+            "Mekan çok şık ve çok güzel. Biz de bir hevesle buraya geldik ancak iki katlı oldukça geniş bir alanı olmasına rağmen oturacak yer bulamadık çünkü sigara kullanmıyoruz ve sigara dumanı solumak istemiyoruz. Dışarıdaki bence gayet de kapalı …",
+            "Tatlı çeşitliliği yeterliydi. Beyaz çikolatalı browniyi öneririm. Icecekleri de lezzetli. Bizi en çok heyecanlandıran atmosferdi. Bahçe kısmına girince bile içiniz açılıyor. Çalışmak, sohbet etmek, kendi kendinize kafa dinlemek için bile …",
+            "Açık hava konseptinde çok güzel bir mekan. İçecek menüleri oldukça çeşitli ve lezzetli. Tatlıları oldukça başarılıydı.\nPeroneller güleryüzlü ve ilgililerdi. Güzel bir pazar günü geçirdik teşekkürler.",
+            "Bütün mekan sigara içenler için tasarlanmış sigara içmeyenler için zaten 3-4 masa anca var. İç kısımda da dış kısımda da zehirciler bulunuyor. Zaten içerisi de full sigara kokuyor leş gibi! Tatlısı güzeldi çayı ise pek beğenmedim. Çok oturamadım, sigara kokusu başımı ağrıttığı için kalktım.",
+            "Görsel olarak görüldüğü üzere çok hoş bir tasarıma sahip mekan. Aksesuarlara kadar her detay ayrıca düşünülmüş. Ama kesinlikle sigara içmiyorsanız tavsiye etmiyorum. Sigara içilmeyen alanında zaten çok az masa var bir de üst katı var. Diğer …",
+            "İlk defa gittim ancak bu kadar kötü olacağını düşünmemiştim. Kapalı alanda sigara içiliyor, sigarasız yarı açık alanları bile yok. Sigara kullanmıyorsanız iyi hizmet alamıyorsunuz yani. Tatlı ve kahveleri de fena değil."
+        ]
+    },
+    {
+        "isim": "Starbucks",
+        "osm_lat": 39.8674337,
+        "osm_lon": 32.7502166,
+        "yorumlar": []
+    },
+    {
+        "isim": "Express Cafe",
+        "osm_lat": 39.8661914,
+        "osm_lon": 32.7492584,
+        "yorumlar": []
+    },
+    {
+        "isim": "5 Çayı Unlu Mamüller",
+        "osm_lat": 39.8951919,
+        "osm_lon": 32.8546233,
+        "yorumlar": []
+    },
+    {
+        "isim": "Bilge Şahin Pasta Dükkanı",
+        "osm_lat": 39.9075457,
+        "osm_lon": 32.8589799,
+        "yorumlar": []
+    },
+    {
+        "isim": "Starbucks",
+        "osm_lat": 39.8833103,
+        "osm_lon": 32.7613394,
+        "yorumlar": [
+            "Mobil uygulamalarından gelmiştim ama personel sadece Ankamall'deki şubede geçerli olduğunu söyledi. Ne alakası var anlamadım burası onların şubesi değil mi yani. Chai tea latte içmek istedim sıcak yokmuş o yüzden soğuk verdiler. Param çöp oldu resmen. Evet iç dekorasyon güzel ama çok gürültülü. Ayrıca personelleri çok ilgisiz ve kaba.",
+            "Merhaba,\nÖncelikle yaşadığınız olumsuz deneyim için üzgün olduğumuzu belirtmek isteriz. Carmelo Coffee olarak amacımız misafirlerimize her zaman en iyi hizmeti … Diğer",
+            "Kajun tarzı hiçbir şey tüketmeyi sevmiyor olmama rağmen mecburen oturduğumuz mekanın double chicken burgeri harikaydı. Oturma düzeni(içecek alanlar ayrı yere, yiyecek alanlar farklı yere teras karma) biraz karışık geldi ama sonra anlamlandırdım, mantıklı.",
+            "Merhaba,\nGeri bildiriminiz için çok teşekkür ederiz! Carmelo Coffee olarak  sizlere en iyi hizmeti sunmak bizim için büyük bir mutluluk. … Diğer",
+            "Merhaba arkadaşlar, mekan için şunu söylücem, iki güzel soğuk kahve içelim diye uğradık ice caramel machito söyledim cm yazan gördüğünüz gibi buz yok neresi ice? Ayrıca L boy söyledim, kahve M boy, kalanı buz boy galiba buz da eklenmeyince …",
+            "KESİNLİKLE OKUYUN\n2 adet More Nar Suyu (KAPALI ŞİŞE) siparişi verdim. Elbet bunları Kafamıza dikmiyeceğimiz için ve YAZ olduğu için buzlu bardakta Servis İstedim ANCAK BUZLU …",
+            "Mekan aşırı pisti, sigara izmaritlerini temizlemek nasıl bu kadar zor olabilir anlamıyorum. Mekanda bulunan hanımefendiye masayı silebilir misiniz dediğimde ağız bükerek geldi sildi sonrasında da bunlar bir yerde çalışmadan anlayamaz diye …",
+            "Puanı nasıl hala bu kadar yüksek anlamak mümkün değil. Büyük ihtimalle Kızılay'daki en kötü kahveyi burada bulabilirsiniz. Lette istediğiniz zaman sadece süt geliyor. Çalışanların umurunda değil tamamen kendi kafalarına göre takılıyorlar. …",
+            "Kesinlikle tavsiye etmem. Kahve yapmayı bilmeyen bir yer. Çalışanlar sanki maaşını benden alıyorda geç vermişim gibi davranıyor. Ne gülümseme var ne tebessüm var bir daha bedava olsa gelmeyeceğim bir yer. Bu arada Kahve tadı da yok sadece sıcak o kadar.",
+            "Kahve lezzetliydi ama paraya dokunan kişi kahve yapmasın ya da yaparken biraz daha titiz davranabilir. Ön bahçe klasik self servis cafe görünümlü, arka bahçe ise biraz kasvetli ve soğuk. Öğrenciler için hem yemek yiyebilecekleri hem de ders …",
+            "Lütfen bu şubeyi tekrar açar mısınız? En sevdiğimiz kafeydi ve atmosferi çok güzeldi🥹 …",
+            "Sakin ve güzel bir cafe öğrencilere ekstra indirim sağlamakta ve sigara içme alanı da mevcut"
+        ]
+    },
+    {
+        "isim": "Melek Cafem",
+        "osm_lat": 39.8962406,
+        "osm_lon": 32.7048241,
+        "yorumlar": [
+            "Fiyatlar biraz yüksek, doğum günü kutladığımızda ufak tefek sıkıntı yaşadık ancak tercih edilebilir",
+            "Guzel nezih bir yer sakin nostaljikbir yapisi var.",
+            "Güzel ferah sakin guzel bir yer.",
+            "Harika lezzetler mutlaka bu lezzetler tadilmali...",
+            "iyi",
+            "Süper şahane"
+        ]
+    },
+    {
+        "isim": "Narquilla",
+        "osm_lat": 39.8702702,
+        "osm_lon": 32.6819069,
+        "yorumlar": []
+    },
+    {
+        "isim": "Karamel Pastanesi",
+        "osm_lat": 39.937727,
+        "osm_lon": 32.8982422,
+        "yorumlar": []
+    },
+    {
+        "isim": "Maviş Pastanesi",
+        "osm_lat": 39.9337501,
+        "osm_lon": 32.9089778,
+        "yorumlar": []
+    },
+    {
+        "isim": "Liva",
+        "osm_lat": 39.8932483,
+        "osm_lon": 32.7023077,
+        "yorumlar": [
+            "All day kahvaltı da kruvasan seçimimden memnunum kahvaltıdaki pancake hariç o çok kötüydü kahvaltı onun dışında güzeldi maya simple güzel bir tatlı ama tek kişi bitirmek çok zor iki kişilik all day kahvaltı 1450 tatlılarda 400-500 lira arasında değişiyor",
+            "2 kişilik all day breakfast aldık. Kruvasan içeriği güzel ama kruvasanın kendisi pek başarılı değildi, tat genel olarak iyiydi. (Pesto-cheese ve egg-beef söyledik) Gronala yoğurt tabağını beğendik. Pankek içi pişmemiş geldi, beğenmedik. …",
+            "Mekan genel olarak güzel, ortamı hoş ve menü gerçekten lezzetli. Sunulan yemeklerden memnun kaldık, servis de başlangıçta fena değildi. Ancak yaşadığımız bazı olumsuzluklar sebebiyle bu memnuniyet maalesef tamamen gölgelendi. …",
+            "1 ay önce ablamla gitmiştim içerisi gayet iyi çalışan arkadaşlarımız ilgiliydi 2 kahve 1 tatlı yedik ikisi bir arada çok tatlı geldi birdaha gitsem tatlının yanında çay içerim. Fiyatlarda gayet uygun",
+            "Harika kahve, kaliteli çikolata. 2 kişi burayı ziyaret ettik içecek olarak siyah çay ve cortado içtik. Cortado tam olması gerektiği gibi, doğru oranda ve kaliteli bir çekirdekle hazırlanmıştı. (Zaten bu işletmeyi kahve festivalinde …",
+            "Mekan tasarımı çok hoş fakat mekan çok küçük. Yan masalarla iç içe oturuuorsunuz biraz. Eşimle kahvaltı için gitmiştik kruvasan sipariş ettik, kruvasanın iç malzemeleri gayet güzeldi ama kruvasan pek başarılı değildi. Eşim beğenmedi ve doymadı 🤭 …",
+            "Mekanın içi çok güzel. Kahvaltı olarak kruvasanlarından Pesto & Cheese, yanına portakal suyu içtim. Çok başarılı ve lezzetliydi. Servis de hızlıydı.",
+            "Atmosferiyle insanın içini ısıtan, tatlıları özenle hazırlanmış çok güzel bir kafe. Çalışanlar güler yüzlü ve ilgiliydi.  Emeği geçen herkese teşekkür ederiz.Kesinlikle tavsiye ederiz",
+            "Mekanın atmosferi çok güzel dışarı kısımda yer yoktu ama içersi daha serindi böyle tatlı bi şeftali kokusu vardı içeride. Menü bol çeşitli, fiyatlar 250 300 arası içecekler. Peach garden olan buzdu tamamen bide simple ice tea denedik o çok …",
+            "Merhabalar efendim, öncelikle bu tatlı ziyaretiniz için çok teşekkür ederiz. Yorumlarınızla hizmet kalitemizi en yüksek seviyelere getirmek için çalışmaya devam ediyoruz. Sizleri tekrardan mağazalarımızda görmekten mutluluk duyarız.",
+            "Saraçoğlu Mahallesinin içinde bulunan bir mekân. Tatlılarının güzel olduğu önerisiyle geldik. Biz ortaya 3 ayrı tatlı istedik hepsini de çok beğendik. Mekân da güzeldi. Biz açık alanda oturmayı tercih ettik ama içerisi de çok şık …"
+        ]
+    },
+    {
+        "isim": "Keyfimce",
+        "osm_lat": 39.9308401,
+        "osm_lon": 32.8177905,
+        "yorumlar": []
+    },
+    {
+        "isim": "Coffee Break",
+        "osm_lat": 39.8703311,
+        "osm_lon": 32.7501427,
+        "yorumlar": []
+    },
+    {
+        "isim": "CAFE BOSTAN",
+        "osm_lat": 39.9474342,
+        "osm_lon": 32.7589669,
+        "yorumlar": []
+    },
+    {
+        "isim": "Starbucks",
+        "osm_lat": 39.8976391,
+        "osm_lon": 32.7742079,
+        "yorumlar": []
+    },
+    {
+        "isim": "Susam",
+        "osm_lat": 39.8924891,
+        "osm_lon": 32.7881532,
+        "yorumlar": []
+    },
+    {
+        "isim": "Köprü Kafe",
+        "osm_lat": 39.9280921,
+        "osm_lon": 32.8745353,
+        "yorumlar": []
+    },
+    {
+        "isim": "Genç Limos Cafe",
+        "osm_lat": 39.9668568,
+        "osm_lon": 32.7144399,
+        "yorumlar": []
+    },
+    {
+        "isim": "Ebrar Kafe",
+        "osm_lat": 39.5880199,
+        "osm_lon": 32.1269839,
+        "yorumlar": []
+    },
+    {
+        "isim": "Aslı Börek",
+        "osm_lat": 39.9012561,
+        "osm_lon": 32.8534632,
+        "yorumlar": []
+    },
+    {
+        "isim": "Park Ehlikeyf",
+        "osm_lat": 39.8701801,
+        "osm_lon": 32.6822155,
+        "yorumlar": []
+    },
+    {
+        "isim": "Mado",
+        "osm_lat": 39.9704682,
+        "osm_lon": 32.7144408,
+        "yorumlar": []
+    },
+    {
+        "isim": "Starbucks",
+        "osm_lat": 39.9702242,
+        "osm_lon": 32.7155224,
+        "yorumlar": []
+    },
+    {
+        "isim": "Big Oven",
+        "osm_lat": 39.9868795,
+        "osm_lon": 32.8027203,
+        "yorumlar": []
+    },
+    {
+        "isim": "Çamaltı pastane",
+        "osm_lat": 39.9956636,
+        "osm_lon": 32.8106792,
+        "yorumlar": [
+            "31.12.2025 tarihinde  ordan pasta aldık . Pastanın içinde ki böğürtlenler resmen küf tadı geliyordu bayat bi pasta yiyemedik Çamaltından sürekli alışveriş yapan birisiyim hiç yakıştıramadım bilinçli yapıldıysa da hakkımız helal olmasın . …",
+            "Özel pasta siparişi vermiştik. Pasta lezzeti tazeliği malzeme kalitesi oldukça iyidi, emeği geçenlerin eline sağlık o anlamda amma ve lakin Oğlumun doğum günü için resimli pasta siparişi vermiştik, pasta hazır olunca fotoğraf ilettiler, …",
+            "Yaşadığınız deneyim için özür dileriz. Birsonraki siparişinizde daha dikatli olacağız.",
+            "Ürünleri lezzetli piyasaya göre makul fiyatlar. Ancak park yeri sıkıntısı var. Tam göbekte yer aldığı için ve bol trafik. Onun dışında gayet memnun kaldık.",
+            "Aslında deneme fırsatımız olamadı..  işletmenin bulunduğu semtin Çok kötü bir durumu var.. koca meydanda bir tane oturup çay içebileceğiniz tek bir yer yok.. bu işletmede de yok.. yanı oradan alacağınız pastayı böreği vs yi oturup …",
+            "Satın çağatay kaçta burası pastane unlu mamüller, sizin yaptığınız yorumun işletmenizle alakası yok. Yorumunuzu gözden geçirin.\nPuanlamanızı ona göre yapınız",
+            "Ürünleri kaliteli Çalışanlar ilgili bahadır Usta‘ya çok teşekkür ediyoruz yapmış olduğu pastalar bir harika. Müşterilere karşı tutumları ve güler yüzleri gerçekten Güzel herkese tavsiye ediyoruz",
+            "Çocuğumun doğum günü pastası için çamaltiyla anlaştık istediğimiz gibi asla olmadı istediğimden küçük geldi.geldi yarım saat olmadı kaydı hep figürler ,biz şeker hamurlu istedik komple kaplamasida onalr krem şanti yapmışlar figürler şeker …",
+            "Sayın Nursi’n hanım; eşiniz şeker hamuru kaplaması istemedi bunun bilgisi verildi, karalama yapmayın",
+            "Eski tadı yok artık\nİki kez bayat pasta yedim yanlış olmuştur dedim ama ikiside sorunluydu. Bir daha zor 🤷🏻‍♂️ …",
+            "Üretim günlük; telefon ile ulaşın bize",
+            "Alman pastası aldık, bayatlamış olduğunu eve gidince anladık. İki tane alman pastası 150 TL ve çöpe atıyorsun",
+            "Merhaba Kenan bey yaşamamış olduğunuz deneyim için özür dileriz. Ürünler günlük üretim. Tekrar uğradığınızda para iadesi yeni\nÜrün temini yapılacaktır. Tekrar bekleriz.",
+            "Özel günlerinde alışveriş yapabilecegimi düşündüm mahallemizin pastanesi olarak gördüğüm ama kişiye özel pasta yaptırdığında kreması ekşimiş olduğunu tespit ettim hadi ona ne diyip misafirliğe giderken aldığım eklerin bayat olması gerçekten çok üzücü bir yıldızımı sadece güler yüzlü ilgilenen insanlara veriyorum",
+            "Sayın Selin karadoğan; özel siparişlerin kremasının bozuk olma şansı sıfır, boyalı yeni nesil pastalarda renk yoğunluğuna göre acı tat olabiliyor. Karalama yapmayın, Tüm mamüllerimiz günlük üretim",
+            "Bugün pasta alırken içinin özellikle muzlu olup olmadığını ve muza alerjimiz olduğunu özellikle 3 kişiye birden sordum hepsi sırf ürünü satmak için muzlu değil çilekli olduğunu iddia ettiği pastanın içinden kocaman muz dilimleri çıktı 700 …"
+        ]
+    },
+    {
+        "isim": "Gönül Kahvesi",
+        "osm_lat": 39.9725411,
+        "osm_lon": 32.8250696,
+        "yorumlar": [
+            "rencide edici bir mekan , daha önce defalarca oturdum. Pasta , kahve  , tatlı yedim , bugün kızımla alışverişe çıktık , onlar oyuncak dukkanındayken terasina gidip bir çay içtim , 65 lira verdim ,sonra kızımla hamburger yedik , onlar …",
+            "Birkaç gün önce gittik, baya oturduk ama siparişimizi almaya çok geç geldiler sonra siparişimizi söylediğimiz halde getirmediler. Sürekli dışardakilerin siparişlerini götürüp getirdiler. Kesinlikle gitmeyin para kazandırmayın.",
+            "Bol sigara dumani olanpahali bir mekan.\n\nDaha gelmem. …",
+            "Kahvenin sunumu tadı…:( tatlıya bişey dememe gerek yok görüntüden de belli oluyor zaten ek olarak mikrodalga iyi döndürmüyodu sanırım bi yeri soğuk bi sıcaktı …",
+            "Ice latteye 2 tane buz atıp latte görünümlü sıcak içecek getirdiler. Soğuk olanını istediğimde ne olduğunu anlamadığım bi içecek geldi. Aslında çok kolay. ICE LATTE 🙂 …",
+            "Waffle istedik hamuru bildiğiniz çiğ geldi 2kez gönderdik ısıtıcıya atıp geldiler ve getiren adam höt höt korkumuzdan iptal ve ya değişim bile isteyemedik çiğ ve ekşi waffleı yiyemedik 300lira parayı boştan verdik geldik asla gidilmez..",
+            "Orta kavrulmuş Türk kahvesi güzeldi.  Fiyatlar biraz pahalı geldi 110 TL MİNİMUM KAHVE ücreti",
+            "Avm'ye Damatlık almaya gitmiştim yarım saat terziyi beklerken vakit geçirmek istedim duvarda türk kahvesi yazısını görünce ilgimi çekti orta türk kahvesi sipariş ettim üzerinde ki köpüğe inanamadım hatta deterjan mı katıyosunuz diye espri yaptım şimdiye kadar ki içtiğim en iyi türk kahvesiydi teşekkürler",
+            "Sigara içmek için çıkmıştım kafeye ait olduğunu söylediler bende bir çay söyledim çay çok hoşuma gitti bi tane daha söyledim onun yanında birde pasta söyledim o da çok güzeldi foruma işim düşerse tekrar uğrayacağım bir yer",
+            "Bir ajda bardak çayın 65 TL olduğu bir mekan, ki çayın da tabağı çay doluydu. Forum'un tek açık hava işletmesi olduğu için pahalı sanırım."
+        ]
+    },
+    {
+        "isim": "Kıtır Kafe",
+        "osm_lat": 39.9725682,
+        "osm_lon": 32.8255261,
+        "yorumlar": []
+    },
+    {
+        "isim": "Dolunay pastane",
+        "osm_lat": 39.9949913,
+        "osm_lon": 32.82123,
+        "yorumlar": []
+    },
+    {
+        "isim": "Dondurma dunyasi",
+        "osm_lat": 39.9929925,
+        "osm_lon": 32.8085379,
+        "yorumlar": []
+    },
+    {
+        "isim": "Seval",
+        "osm_lat": 39.9896817,
+        "osm_lon": 32.8005358,
+        "yorumlar": []
+    },
+    {
+        "isim": "Şampion Döner",
+        "osm_lat": 39.991251,
+        "osm_lon": 32.7997915,
+        "yorumlar": []
+    },
+    {
+        "isim": "Kuğulu Park Restaurant & Cafe",
+        "osm_lat": 39.9019935,
+        "osm_lon": 32.8596967,
+        "yorumlar": [
+            "Kuğulu parkın içerisinde yüksek giriş teraslı güzel bir işletme... Yemeğini deneyimleme firsatim olmadi ama çayı harikaydı... Çay simit sohbeti keyifli idi. Menünün güncel fotoğrafını bırakıyorum işinize yararsa beğenirsiniz ;)",
+            "Kuğulupark gezimizden sonra bu kafeye uğrayıp Bir limonata bir milkshake söyledik. Limonatası güzel olmasıyla beraber milkshake buzla doluydu, içerken sürekli buz parçası geldi. Fiyatlar normal seviyede. Kafe boştu ve içecekler hızlı geldi.",
+            "Fiyati bana göre çok pahalı geldi, patlıcan kebabın lezzeti iyiydi, garsonların davranışı da iyiydi fakat ödeme için gelen fiş kutusunu ısrarla yanımda bırakarak bahşiş almak için bekletmesi bana çok garip geldi.  Kartla ödediğim halde o …",
+            "Parkı gezdikten sonra bir şeyler yemek için uğradığım fakat fiyatları gördükten sonra vazgeçtiğim bir mekan. Çalışanlar iyi ilgili ortam gayet güzel dondurmalı irmik ve çay aldım bunun için toplamda 180 lira ödedim. Bir seyler içmek için gidilebilir ama yemek konusunda pahali geldi bana.",
+            "Garsonlar çok güleryüzlü ve yardımseverdi. Biz ortamını salaş ve rahat buluyoruz, burada zaman geçirmek çok keyifli. Kasıntı bir kafede rahatsız koltuklarda oturmuyorsunuz. Kuğulu parkın içerisinde olması da seyir keyfi için çok güzel.\nAdana kebabını başarılı bulduk, servis hızlıydı. Yanında salata ve ezme geldi.",
+            "Çocuklarla beraber eğlenceli bir parktı. Park küçük ama oldukça dolu. Havuz kuğular kazlar ördekler. Sonra havuz başı mekanda fena değil. Çocuk parkı sanırım yakın bir zamanda yenilenmiş. Çocuklar baya eğlendi.",
+            "Çilekli Milkshake söyledim.İçi sadece buz ve sütten ibaretti.Çilek tadı yoktu.Annem ve ablam caramel macchiato söyledi anneminki tam geldi karamelli falan,ablamınki normal soğuk kahveydi karamel yoktu içinde.Söyledik karamel yok diye adamlar karıştırıp tekrar getirdi.Beğenmedik.",
+            "Garsonlar ilgili ve hızlı.. Köftesi gayet güzeldi. Yanında salata ve ezme ikram. Çoçuğum yemekten sonra parka gitti. Ben kahvemi  çayımı içerken gözlemledim. Keyifli ve güzel mekan..",
+            "Mekan merkezi bir yerde ve rahat bir ortama sahip yemekler lezzetliydi özellikle mezeler tazeydi fiyatlar normaldi servis güler yüzlüydü akşamları çok kalabalık olmuyordu arkadaşlarla oturup sohbet etmek için uygun bir yer oldu genel olarak memnun kaldık",
+            "Kuğulu parkın içinde olan bu yer lokasyon olarak muazzam fakat hizmet ve hijyen bitik.genç bi arkadaşı iki adam bi o tarafa bi bu tarafa koşturup duruyorlar. Çay istedim fotolarda ne kadar belli oluyor bilmiyorum barsak leş sanki bir önceki …"
+        ]
+    },
+    {
+        "isim": "Rima",
+        "osm_lat": 39.9911484,
+        "osm_lon": 32.8002184,
+        "yorumlar": []
+    }
+]
