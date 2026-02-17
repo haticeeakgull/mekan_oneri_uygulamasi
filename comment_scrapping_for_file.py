@@ -24,38 +24,60 @@ def google_maps_branch_scraper(place_name, lat, lon):
     all_reviews = []
 
     try:
-        # KRİTİK DEĞİŞİKLİK: Doğrudan koordinat odaklı arama URL'si
-        # Bu URL Google'ı o koordinatın tam üstüne bırakır
         search_url = f"https://www.google.com/maps/search/{place_name}/@{lat},{lon},17z"
         driver.get(search_url)
         print(f"--- {place_name} ({lat}, {lon}) İşleniyor ---")
         time.sleep(6)
 
-        # 1. MEKANI SEÇME (Koordinata en yakın olanı bulma)
+        # --- REKLAM SAVAR VE MEKAN SEÇME MANTIĞI ---
         try:
-            # Sol listedeki ilk organik sonuca tıkla (Çünkü koordinat verdiğimiz için ilk sonuç o şubedir)
-            results = driver.find_elements(By.CLASS_NAME, "hfpxzc")
-            if results:
-                driver.execute_script("arguments[0].click();", results[0])
-                time.sleep(4)
-            else:
-                print("Sonuç bulunamadı, muhtemelen doğrudan detay sayfası açıldı.")
-        except:
-            pass
+            # 1. Hamle: Olası reklam kartlarını/pop-upları ESC ile kapat
+            webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
+            time.sleep(1)
 
-        # 2. ADRES DOĞRULAMA (İsteğe bağlı)
+            # Sol listedeki tüm sonuçları bul
+            results = driver.find_elements(By.CLASS_NAME, "hfpxzc")
+
+            target_clicked = False
+            if results:
+                for res in results:
+                    # Kapsayıcı kutunun metnine bak (Sponsorlu/Reklam yazıyor mu?)
+                    container_text = res.find_element(By.XPATH, "./../../../../..").text
+
+                    if "Sponsorlu" in container_text or "Reklam" in container_text:
+                        print(
+                            f"Sponsorlu sonuç ({res.get_attribute('aria-label')}) atlandı..."
+                        )
+                        continue
+
+                    # Reklam değilse, organik sonuca tıkla
+                    print(
+                        f"Organik mekana tıklanıyor: {res.get_attribute('aria-label')}"
+                    )
+                    driver.execute_script("arguments[0].click();", res)
+                    target_clicked = True
+                    break
+
+            if not target_clicked:
+                print("Uyarı: Organik sonuç bulunamadı!")
+                # Eğer hiç organik sonuç yoksa ama sayfa doğrudan açıldıysa devam etsin
+
+            time.sleep(4)
+        except Exception as e:
+            print(f"Mekan seçme hatası: {e}")
+
+        # 2. ADRES DOĞRULAMA
         try:
             address_btn = wait.until(
                 EC.presence_of_element_located(
                     (By.XPATH, '//button[contains(@aria-label, "Adres:")]')
                 )
             )
-            current_address = address_btn.get_attribute("aria-label")
-            print(f"Doğrulanan Adres: {current_address}")
+            print(f"Doğrulanan Adres: {address_btn.get_attribute('aria-label')}")
         except:
             pass
 
-        # 3. YORUMLARA GİT VE SCROLL (Senin çalışan scroll mantığın)
+        # 3. YORUMLARA GİT VE SCROLL
         try:
             reviews_btn = wait.until(
                 EC.element_to_be_clickable(
@@ -71,11 +93,13 @@ def google_maps_branch_scraper(place_name, lat, lon):
                 )
             )
 
-            for _ in range(15):  # Her şube için 30-40 yorum yeterli dersen
+            for i in range(15):
                 driver.execute_script(
                     "arguments[0].scrollTop = arguments[0].scrollHeight", scrollable_div
                 )
                 time.sleep(2)
+                # İstersen her scroll'da bir PAGE_DOWN da atabilirsin (daha garantidir)
+                scrollable_div.send_keys(Keys.PAGE_DOWN)
         except:
             print("Yorum alanı bulunamadı.")
 
@@ -96,10 +120,11 @@ def google_maps_branch_scraper(place_name, lat, lon):
 # --- TOPLU İŞLEME DÖNGÜSÜ ---
 def hepsini_topla():
     df = pd.read_csv("ankara_kafeler.csv")  # OSM'den gelen koordinatlı liste
+    df_reversed = df.iloc[::-1]
     toplu_sonuc = []
 
     # Şubeleri teker teker gez
-    for index, row in df.iterrows():
+    for index, row in df_reversed.iterrows():
         print(f"\n[{index+1}/{len(df)}] {row['isim']} taranıyor...")
         yorumlar = google_maps_branch_scraper(row["isim"], row["lat"], row["lon"])
 
@@ -114,11 +139,11 @@ def hepsini_topla():
 
         # Her 5 şubede bir yedek al (Botun çökme ihtimaline karşı)
         if (index + 1) % 5 == 0:
-            with open("toplu_mekan_verisi_yedek.json", "w", encoding="utf-8") as f:
+            with open("toplu_mekan_verisi_yedek1.json", "w", encoding="utf-8") as f:
                 json.dump(toplu_sonuc, f, ensure_ascii=False, indent=4)
 
     with open("final_mekan_verisi.json", "w", encoding="utf-8") as f:
         json.dump(toplu_sonuc, f, ensure_ascii=False, indent=4)
 
 
-hepsini_topla()  # Başlatmak için bunu kullanın
+hepsini_topla()
