@@ -15,6 +15,15 @@ def google_maps_branch_scraper(place_name, lat, lon):
     chrome_options.binary_location = (
         r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
     )
+    profil_yolu = r"C:\Users\hakgl\AppData\Local\BraveSoftware\Brave-Browser\User Data"
+
+    chrome_options.add_argument(f"--user-data-dir={profil_yolu}")
+    chrome_options.add_argument("--profile-directory=Default")
+
+    # Otomasyon izlerini gizle (Giriş yaptığında Google'ın 'şüpheli işlem' dememesi için)
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    chrome_options.add_experimental_option("useAutomationExtension", False)
     chrome_options.add_argument("--lang=tr")
     chrome_options.add_argument("--start-maximized")
     chrome_options.add_argument("--disable-gpu")
@@ -24,24 +33,25 @@ def google_maps_branch_scraper(place_name, lat, lon):
     all_reviews = []
 
     try:
-        search_url = f"https://www.google.com/maps/search/{place_name}/@{lat},{lon},17z"
+        search_url = (
+            f"https://www.google.com/maps/search/{place_name}/@{lat},{lon},17z?hl=tr"
+        )
         driver.get(search_url)
         print(f"--- {place_name} ({lat}, {lon}) İşleniyor ---")
         time.sleep(6)
 
-        # --- REKLAM SAVAR VE MEKAN SEÇME MANTIĞI ---
+        # sponsorlu engelleme ve mekan seçme
         try:
-            # 1. Hamle: Olası reklam kartlarını/pop-upları ESC ile kapat
+            # Olası reklam kartlarını/pop-upları ESC ile kapatma
             webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
             time.sleep(1)
 
-            # Sol listedeki tüm sonuçları bul
             results = driver.find_elements(By.CLASS_NAME, "hfpxzc")
 
             target_clicked = False
             if results:
                 for res in results:
-                    # Kapsayıcı kutunun metnine bak (Sponsorlu/Reklam yazıyor mu?)
+
                     container_text = res.find_element(By.XPATH, "./../../../../..").text
 
                     if "Sponsorlu" in container_text or "Reklam" in container_text:
@@ -50,7 +60,6 @@ def google_maps_branch_scraper(place_name, lat, lon):
                         )
                         continue
 
-                    # Reklam değilse, organik sonuca tıkla
                     print(
                         f"Organik mekana tıklanıyor: {res.get_attribute('aria-label')}"
                     )
@@ -60,7 +69,6 @@ def google_maps_branch_scraper(place_name, lat, lon):
 
             if not target_clicked:
                 print("Uyarı: Organik sonuç bulunamadı!")
-                # Eğer hiç organik sonuç yoksa ama sayfa doğrudan açıldıysa devam etsin
 
             time.sleep(4)
         except Exception as e:
@@ -119,15 +127,24 @@ def google_maps_branch_scraper(place_name, lat, lon):
 
 # --- TOPLU İŞLEME DÖNGÜSÜ ---
 def hepsini_topla():
-    df = pd.read_csv("ankara_kafeler.csv")  # OSM'den gelen koordinatlı liste
-    df_reversed = df.iloc[::-1]
-    toplu_sonuc = []
+    # 1. Önce mevcut veriyi yükle (Eskiler silinmesin diye)
+    try:
+        with open("final_mekan_verisi.json", "r", encoding="utf-8") as f:
+            toplu_sonuc = json.load(f)
+        print(f"Mevcut veri yüklendi: {len(toplu_sonuc)} mekan zaten var.")
+    except FileNotFoundError:
+        toplu_sonuc = []
+        print("Mevcut veri bulunamadı, yeni dosya oluşturulacak.")
 
-    # Şubeleri teker teker gez
+    # 2. Sadece kalanları oku
+    df = pd.read_csv("ankara_kafeler_kalanlar.csv")
+    df_reversed = df.iloc[::-1]
+
     for index, row in df_reversed.iterrows():
         print(f"\n[{index+1}/{len(df)}] {row['isim']} taranıyor...")
         yorumlar = google_maps_branch_scraper(row["isim"], row["lat"], row["lon"])
 
+        # Yeni veriyi listeye ekle
         toplu_sonuc.append(
             {
                 "isim": row["isim"],
@@ -137,13 +154,10 @@ def hepsini_topla():
             }
         )
 
-        # Her 5 şubede bir yedek al (Botun çökme ihtimaline karşı)
-        if (index + 1) % 5 == 0:
-            with open("toplu_mekan_verisi_yedek1.json", "w", encoding="utf-8") as f:
-                json.dump(toplu_sonuc, f, ensure_ascii=False, indent=4)
-
-    with open("final_mekan_verisi.json", "w", encoding="utf-8") as f:
-        json.dump(toplu_sonuc, f, ensure_ascii=False, indent=4)
+        # 3. Her şubeden sonra dosyayı güncelle (En garantisi budur)
+        # Böylece bot çökerse o ana kadar çektiği her şey dosyaya yazılmış olur
+        with open("final_mekan_verisi.json", "w", encoding="utf-8") as f:
+            json.dump(toplu_sonuc, f, ensure_ascii=False, indent=4)
 
 
 hepsini_topla()

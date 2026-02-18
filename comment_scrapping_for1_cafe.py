@@ -11,27 +11,44 @@ from selenium.webdriver.common.keys import Keys
 
 def google_maps_full_scraper(place_name, lat, lon):
     chrome_options = Options()
+
+    # DOĞRU: Burası .exe dosyasının yolu olmalı
     chrome_options.binary_location = (
         r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
     )
+
+    # DOĞRU: User Data klasörüne kadar olan yol (Default'u buraya yazma!)
+    profil_yolu = r"C:\Users\hakgl\AppData\Local\BraveSoftware\Brave-Browser\User Data"
+
+    chrome_options.add_argument(f"--user-data-dir={profil_yolu}")
+    chrome_options.add_argument("--profile-directory=Default")
+
+    # Otomasyon izlerini gizle (Giriş yaptığında Google'ın 'şüpheli işlem' dememesi için)
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    chrome_options.add_experimental_option("useAutomationExtension", False)
+
     chrome_options.add_argument("--lang=tr")
     chrome_options.add_argument("--start-maximized")
-    chrome_options.add_argument("--disable-gpu")
 
     driver = webdriver.Chrome(options=chrome_options)
-    wait = WebDriverWait(driver, 15)
 
+    # Webdriver olduğunu gizle
+    driver.execute_script(
+        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
+    )
+
+    wait = WebDriverWait(driver, 15)
     all_reviews = []
-    full_address = "Bulunamadı"
 
     try:
-        # 1. STRATEJİK URL: Arama yapma, koordinata git ve orada "ara"
-        # Bu URL yapısı Google'ı verdiğin lat,lon çevresinde aramaya zorlar.
-        url = f"https://www.google.com/maps/search/{place_name}/@{lat},{lon},17z"
+        # Arama URL'si
+        url = f"https://www.google.com/maps/search/{place_name}/@{lat},{lon},17z?hl=tr"
         driver.get(url)
-        print(f"--- {place_name} ({lat}, {lon}) Hedefleniyor ---")
-        time.sleep(6)
+        print(f"--- {place_name} Hedefleniyor ---")
+        time.sleep(8)  # Profil yüklenirken biraz daha fazla süre tanı
 
+        # ... (Geri kalan reklam savar ve scroll kısımları aynı kalabilir) ...
         # 2. REKLAM SAVAR SEÇİCİ
         print("Sonuçlar analiz ediliyor...")
         try:
@@ -115,6 +132,7 @@ def google_maps_full_scraper(place_name, lat, lon):
 
 # --- TEST ---
 
-lat_test, lon_test = "39.8976391", "32.7742079"
-sonuc = google_maps_full_scraper("Starbucks", lat_test, lon_test)
+
+lat_test, lon_test = "39.9312266", "32.8260134"
+sonuc = google_maps_full_scraper("Mocaco", lat_test, lon_test)
 print(f"Bitti! Toplam {len(sonuc)} yorum alındı.")
