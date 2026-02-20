@@ -133,6 +133,6 @@ def google_maps_full_scraper(place_name, lat, lon):
 # --- TEST ---
 
 
-lat_test, lon_test = "39.9312266", "32.8260134"
-sonuc = google_maps_full_scraper("Mocaco", lat_test, lon_test)
+lat_test, lon_test = "39.9070912", "32.8602278"
+sonuc = google_maps_full_scraper("Arabica", lat_test, lon_test)
 print(f"Bitti! Toplam {len(sonuc)} yorum alındı.")

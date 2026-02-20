@@ -20,7 +20,17 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
 def verileri_toplu_yukle(json_dosya_yolu):
-    with open(json_dosya_yolu, "r", encoding="utf-8") as f:
+    current_dir = os.path.dirname(os.path.abspath(__file__))  # codes/supabase
+    root_dir = os.path.abspath(os.path.join(current_dir, "../../"))  # ana dizin
+
+    # Gerçek yolu oluştur
+    tam_yol = os.path.join(root_dir, json_dosya_yolu)
+
+    if not os.path.exists(tam_yol):
+        print(f"Hata: Dosya şu adreste bulunamadı: {tam_yol}")
+        return
+
+    with open(tam_yol, "r", encoding="utf-8") as f:
         kafeler = json.load(f)
 
     print(f"{len(kafeler)} adet kafe aktarılıyor...")
@@ -48,4 +58,4 @@ def verileri_toplu_yukle(json_dosya_yolu):
 
 
 if __name__ == "__main__":
-    verileri_toplu_yukle("final_mekan_verisi_temiz.json")
+    verileri_toplu_yukle("json_files/final_mekan_verisi_ankara_temiz.json")
