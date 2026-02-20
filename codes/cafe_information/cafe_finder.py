@@ -1,24 +1,31 @@
 import overpy
 import pandas as pd
+import os
 
 
-def ankara_kafeleri_listele():
+def kafeleri_listele(sehir):
     api = overpy.Overpass()
-    query = """
+
+    query = f"""
     [out:json];
-    area["name"="Ankara"]->.searchArea;
+    area["name"="{sehir}"]->.searchArea;
     (
       node["amenity"="cafe"](area.searchArea);
       way["amenity"="cafe"](area.searchArea);
     );
     out center;
     """
-    print("Ankara kafe listesi çekiliyor...")
-    result = api.query(query)
+
+    print(f"{sehir} için kafe listesi çekiliyor...")
+
+    try:
+        result = api.query(query)
+    except Exception as e:
+        print(f"Overpass hatası: {e}")
+        return
 
     data = []
 
-    # Node (Nokta) ve Way (Alan/Bina) verilerini tara
     for node in result.nodes:
         name = node.tags.get("name")
         if name:
@@ -27,7 +34,6 @@ def ankara_kafeleri_listele():
     for way in result.ways:
         name = way.tags.get("name")
         if name:
-            # Way verilerinde 'center' kullanılır
             data.append(
                 {
                     "isim": name,
@@ -36,12 +42,21 @@ def ankara_kafeleri_listele():
                 }
             )
 
+    if not data:
+        print(f"Uyarı: {sehir} için hiç kafe bulunamadı.")
+        return
+
     df = pd.DataFrame(data)
-    # Aynı isim ve konuma sahip olanları temizleyelim
     df = df.drop_duplicates(subset=["lat", "lon"])
 
-    df.to_csv("ankara_kafeler.csv", index=False, encoding="utf-8-sig")
-    print(f"{len(df)} adet şube koordinatlarıyla birlikte kaydedildi.")
+    dosya_adi = f"csv_files/{sehir.lower()}_kafeler.csv"
+
+    os.makedirs("csv_files", exist_ok=True)
+
+    df.to_csv(dosya_adi, index=False, encoding="utf-8-sig")
+    print(f"{sehir}: {len(df)} adet şube '{dosya_adi}' dosyasına kaydedildi.")
 
 
-ankara_kafeleri_listele()
+# Örnek kullanım:
+# kafeleri_listele()
+# kafeleri_listele("İstanbul")
