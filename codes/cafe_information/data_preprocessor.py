@@ -12,7 +12,6 @@ def yorum_temizle(sehir):
         print(f"Hata: {giris_dosyasi} bulunamadı!")
         return
 
-    # Mekan sahiplerinin sık kullandığı kalıplar (Kara liste)
     kara_liste = [
         "değerlendirmeniz",
         "nazik yorumunuz",
@@ -39,22 +38,20 @@ def yorum_temizle(sehir):
         yeni_yorumlar = []
 
         for yorum in eski_yorumlar:
-            # 1. Kısa yorumları ele (Örn: "Ok", "Güzel") - Opsiyonel: 5 karakter altı
+
             if len(yorum.strip()) < 5:
                 continue
 
-            # 2. Mekan sahibi kalıplarını kontrol et (Case-insensitive)
             is_owner_reply = False
             for kelime in kara_liste:
                 if kelime in yorum.lower():
-                    # Eğer yorum çok kısaysa ve bu kelimeyi içeriyorsa kesin mekan sahibidi
+
                     is_owner_reply = True
                     break
 
             if not is_owner_reply:
                 yeni_yorumlar.append(yorum.strip())
 
-        # Eğer temizlikten sonra hala yorumu kalmışsa kafeyi listeye ekle
         if yeni_yorumlar:
             kafe["yorumlar"] = yeni_yorumlar
             temiz_kafeler.append(kafe)
