@@ -58,4 +58,4 @@ def verileri_toplu_yukle(json_dosya_yolu):
 
 
 if __name__ == "__main__":
-    verileri_toplu_yukle("json_files/final_mekan_verisi_ankara_temiz.json")
+    verileri_toplu_yukle("json_files/eksik_mekan_verileri_ankara.json")

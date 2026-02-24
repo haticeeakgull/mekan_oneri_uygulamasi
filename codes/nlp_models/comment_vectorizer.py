@@ -9,10 +9,10 @@ def yorumlari_vektorlestir(sehir):
     giris_dosyasi = os.path.join(
         ana_dizin,
         "json_files",
-        f"mekan_verisi_owner_yorumlarindan_temizlenmis_{sehir.lower()}.json",
+        f"eksik_mekan_verileri_{sehir.lower()}.json",
     )
     cikis_dosyasi = os.path.join(
-        ana_dizin, "json_files", f"final_mekan_verisi_vektorlu_{sehir.lower()}.json"
+        ana_dizin, "json_files", f"eksik_mekan_verisi_vektorlu_{sehir.lower()}.json"
     )
 
     if not os.path.exists(giris_dosyasi):
@@ -25,7 +25,6 @@ def yorumlari_vektorlestir(sehir):
     tokenizer = AutoTokenizer.from_pretrained(model_yolu)
     model = AutoModel.from_pretrained(model_yolu)
 
-    # Modeli değerlendirme moduna al (Gradyan hesaplamasın, daha hızlı çalışır)
     model.eval()
 
     with open(giris_dosyasi, "r", encoding="utf-8") as f:
@@ -42,8 +41,6 @@ def yorumlari_vektorlestir(sehir):
         # Tüm yorumları birleştir
         tum_metin = " ".join(kafe["yorumlar"])
 
-        # 1. ADIM: Metni Tokenize Et (BERT'in anlayacağı sayılara çevir)
-        # padding ve truncation önemli: metin çok uzunsa keser, kısaysa tamamlar
         inputs = tokenizer(
             tum_metin,
             return_tensors="pt",
@@ -52,12 +49,9 @@ def yorumlari_vektorlestir(sehir):
             max_length=512,
         )
 
-        # 2. ADIM: Modele Besle (Vektörleri Üret)
-        with torch.no_grad():  # Hafıza kullanımı için hesaplamayı kapatıyoruz
+        with torch.no_grad():
             outputs = model(**inputs)
 
-        # 3. ADIM: Pooling (Tüm metni temsil eden vektörü al - CLS Token)
-        # Genelde [CLS] token'ı (ilk token) tüm metnin anlamını taşır
         vektor = outputs.last_hidden_state[0][0].tolist()
 
         kafe["vektor"] = vektor
