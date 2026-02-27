@@ -24,6 +24,7 @@ vibe_sozlugu = {
         "kütüphane",
         "sessiz",
         "odaklanma",
+        "bilgisayar",
     ],
     "sosyal-canlı": [
         "canlı",
@@ -52,25 +53,9 @@ vibe_sozlugu = {
     ],
 }
 
-ozellik_sozlugu = {
-    "has_priz": ["priz", "şarj", "sarj", "elektrik", "uzatma kablosu"],
-    "has_alkol": [
-        "alkol",
-        "bira",
-        "şarap",
-        "kokteyl",
-        "rakı",
-        "cin",
-        "gin",
-        "pub",
-        "bar",
-    ],
-}
-
 
 def etiketleri_analiz_et(yorumlar):
     mekan_vibes = []
-    ozellikler = {"has_priz": False, "has_alkol": False}
 
     tum_metin = " ".join(yorumlar).lower()
 
@@ -78,20 +63,15 @@ def etiketleri_analiz_et(yorumlar):
     for vibe, kelimeler in vibe_sozlugu.items():
         # Eğer bu vibe grubundan en az 2 kelime geçiyorsa etiketi ekle
         eslesme_sayisi = sum(1 for kelime in kelimeler if kelime in tum_metin)
-        if eslesme_sayisi >= 1:  # 1 bile geçse şimdilik alalım, istersen 2 yapabilirsin
+        if eslesme_sayisi >= 2:
             mekan_vibes.append(vibe)
 
-    # Teknik Özellik Analizi
-    for ozellik, kelimeler in ozellik_sozlugu.items():
-        if any(kelime in tum_metin for kelime in kelimeler):
-            ozellikler[ozellik] = True
-
-    return mekan_vibes, ozellikler
+    return mekan_vibes
 
 
 def verileri_zenginlestir_ve_guncelle(sehir):
     # JSON Dosyasını Oku
-    dosya_yolu = f"json_files/final_mekan_verisi_vektorlu_{sehir.lower()}.json"
+    dosya_yolu = f"json_files/vektorlu_mekan_verisi_owner_yorumlarindan_temizlenmis_{sehir.lower()}.json"
 
     if not os.path.exists(dosya_yolu):
         print("Dosya bulunamadı!")
@@ -103,15 +83,13 @@ def verileri_zenginlestir_ve_guncelle(sehir):
     print(f"{len(kafeler)} mekan analiz ediliyor ve Supabase'e gönderiliyor...")
 
     for kafe in kafeler:
-        vibes, ozellikler = etiketleri_analiz_et(kafe.get("yorumlar", []))
+        vibes = etiketleri_analiz_et(kafe.get("yorumlar"))
 
         # Supabase Güncelleme
         try:
-            supabase.table("vektor_verili_kafeler").update(
+            supabase.table("vektor_verili_adresli_kafeler").update(
                 {
                     "vibe_etiketleri": vibes,
-                    "has_priz": ozellikler["has_priz"],
-                    "has_alkol": ozellikler["has_alkol"],
                 }
             ).eq("kafe_adi", kafe["isim"]).execute()
 

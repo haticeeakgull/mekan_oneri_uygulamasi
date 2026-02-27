@@ -6,7 +6,7 @@ from transformers import AutoTokenizer, AutoModel
 app = FastAPI()
 
 # Modelini yükle (Daha önce kullandığın model adını buraya yaz)
-model_name = "dbmdz/bert-base-turkish-cased"
+model_name = "./models/bert_turkish/"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
 

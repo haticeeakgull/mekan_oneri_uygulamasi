@@ -3,10 +3,8 @@ import os
 
 
 def yorum_temizle(sehir):
-    giris_dosyasi = f"json_files/final_mekan_verisi_temiz_{sehir.lower()}.json"
-    cikis_dosyasi = (
-        f"json_files/mekan_verisi_owner_yorumlarindan_temizlenmis_{sehir.lower()}.json"
-    )
+    giris_dosyasi = f"json_files/final_mekan_verisi_vektorlu_{sehir.lower()}.json"
+    cikis_dosyasi = f"json_files/vektorlu_mekan_verisi_owner_yorumlarindan_temizlenmis_{sehir.lower()}.json"
 
     if not os.path.exists(giris_dosyasi):
         print(f"Hata: {giris_dosyasi} bulunamadı!")
