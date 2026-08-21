@@ -12,23 +12,26 @@ from selenium.webdriver.support import expected_conditions as EC
 def google_maps_finder(search_query, city_name):
     chrome_options = Options()
 
-    # 1. BRAVE VE PROFIL AYARLARI
-    # Brave .exe yolunu kontrol et
+    # 1. CHROME KULLAN (Brave yerine - daha stabil)
     chrome_options.binary_location = (
-        r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
+        r"C:\Program Files\Google\Chrome\Application\chrome.exe"
     )
 
-    # Kendi kullanıcı adınla yolu doğrula (brave://version/ içinden bakabilirsin)
-    profil_yolu = r"C:\Users\hakgl\AppData\Local\BraveSoftware\Brave-Browser\User Data"
-    chrome_options.add_argument(f"--user-data-dir={profil_yolu}")
-    chrome_options.add_argument("--profile-directory=Default")
+    # 2. PROFİL SORUNU YOK - Geçici profil kullan
+    # chrome_options.add_argument(f"--user-data-dir={profil_yolu}")  # ← KALDIRILDI
+    # chrome_options.add_argument("--profile-directory=Default")  # ← KALDIRILDI
 
-    # 2. OTOMASYON GİZLEME VE DİĞER AYARLAR
+    # 3. OTOMASYON GİZLEME VE DİĞER AYARLAR
     chrome_options.add_argument("--disable-blink-features=AutomationControlled")
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option("useAutomationExtension", False)
     chrome_options.add_argument("--lang=tr")
     chrome_options.add_argument("--start-maximized")
+
+    # GPU sorunlarını önle
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
 
     driver = webdriver.Chrome(options=chrome_options)
 
@@ -50,11 +53,14 @@ def google_maps_finder(search_query, city_name):
         time.sleep(7)
 
         # 3. KAYDIRMA İŞLEMİ (Sayfa sonuna kadar)
-        print(f"--- {city_name.upper()} İÇİN TARAMA BAŞLADI ---")
+        print(f"\n{'='*60}")
+        print(f"🔍 {city_name.upper()} İÇİN KAFE TARAMASI BAŞLADI")
+        print(f"{'='*60}\n")
         try:
             scrollable_div = wait.until(
                 EC.presence_of_element_located((By.XPATH, '//div[@role="feed"]'))
             )
+            print("✅ Sonuç paneli bulundu, scroll işlemi başlıyor...\n")
 
             last_height = driver.execute_script(
                 "return arguments[0].scrollHeight", scrollable_div
@@ -67,7 +73,16 @@ def google_maps_finder(search_query, city_name):
                     "arguments[0].scrollTop = arguments[0].scrollHeight", scrollable_div
                 )
                 scroll_count += 1
-                print(f"Kaydırma yapılıyor... {scroll_count}")
+
+                # Her 5 scroll'da bir ilerleme göster
+                if scroll_count % 5 == 0:
+                    current_places = len(
+                        driver.find_elements(By.CSS_SELECTOR, "a.hfpxzc")
+                    )
+                    print(
+                        f"📜 Scroll {scroll_count} - Şu ana kadar {current_places} mekan bulundu..."
+                    )
+
                 time.sleep(3)  # Google'ın yeni sonuçları yüklemesi için süre
 
                 # Kontrol 1: "Sayfanın sonuna ulaştınız" yazısı var mı?
@@ -103,11 +118,14 @@ def google_maps_finder(search_query, city_name):
             print(f"Kaydırma panelinde sorun oluştu: {e}")
 
         # 4. VERİLERİ TOPLA VE ANALİZ ET
-        print("Mekan kartları analiz ediliyor...")
+        print(f"\n{'='*60}")
+        print("🧹 Mekan kartları analiz ediliyor ve koordinatlar ayıklanıyor...")
+        print(f"{'='*60}\n")
         places = driver.find_elements(By.CSS_SELECTOR, "a.hfpxzc")
-        print(
-            f"Toplam {len(places)} potansiyel mekan bulundu. Koordinatlar ayıklanıyor..."
-        )
+        print(f"📍 Toplam {len(places)} potansiyel mekan bulundu.")
+
+        processed = 0
+        skipped = 0
 
         for place in places:
             try:
@@ -128,6 +146,11 @@ def google_maps_finder(search_query, city_name):
                         f["lat"] == lat and f["lon"] == lon for f in found_cafes
                     ):
                         found_cafes.append({"isim": name, "lat": lat, "lon": lon})
+                        processed += 1
+                        if processed % 10 == 0:
+                            print(f"   ✅ {processed} benzersiz mekan işlendi...")
+                    else:
+                        skipped += 1
                 else:
                     # Link içinden '@' ile başlayan parçayı manuel ayıkla
                     parts = link.split("/")
@@ -143,8 +166,18 @@ def google_maps_finder(search_query, city_name):
                                     found_cafes.append(
                                         {"isim": name, "lat": lat, "lon": lon}
                                     )
+                                    processed += 1
+                                    if processed % 10 == 0:
+                                        print(
+                                            f"   ✅ {processed} benzersiz mekan işlendi..."
+                                        )
             except:
+                skipped += 1
                 continue
+
+        print(f"\n📊 İşleme Özeti:")
+        print(f"   ✅ Benzersiz mekan: {processed}")
+        print(f"   ⏭️  Duplike/hatalı: {skipped}")
 
     except Exception as e:
         print(f"Genel bir hata oluştu: {e}")
@@ -160,13 +193,19 @@ def google_maps_finder(search_query, city_name):
         filename = f"csv_files/{city_name.lower()}_kafe_listesi.csv"
         df = pd.DataFrame(found_cafes)
         df.to_csv(filename, index=False, encoding="utf-8-sig")
-        print(f"\n✅ İŞLEM TAMAMLANDI!")
-        print(f"📊 Toplam bulunan benzersiz mekan: {len(found_cafes)}")
-        print(f"📍 Dosya buraya kaydedildi: {filename}")
+        
+        print(f"\n{'='*60}")
+        print("✅ İŞLEM TAMAMLANDI!")
+        print(f"{'='*60}")
+        print(f"📊 Toplam bulunan benzersiz kafe: {len(found_cafes)}")
+        print(f"� Dosya konumu: {filename}")
+        print(f"{'='*60}\n")
     else:
-        print(
-            "❌ Hiç mekan bulunamadı. Lütfen arama terimini veya bağlantınızı kontrol edin."
-        )
+        print("\n❌ Hiç kafe bulunamadı.")
+        print("💡 Öneriler:")
+        print("   - İnternet bağlantınızı kontrol edin")
+        print("   - Şehir adını doğru yazdığınızdan emin olun")
+        print("   - Google Maps'te manuel olarak arama yapıp sonuç olup olmadığını kontrol edin\n")
 
     return found_cafes
 
